@@ -1,18 +1,27 @@
 class SportsNews
-	def initialize game_Id
-    @gameId = game_Id
+	def initialize params
+    @gameId = params[:game_id]
+    @sportId = params[:sport_id]
+    resolve_endpoints
   	end
 
-	 def resolve_endpoints(gameId)
-	 	status = get_game_status(gameId)
-	 	if status >0
-	 		# completed match
-	 	elsif status < 0
-	 		# not started yet
+	 def resolve_endpoints
+	 	puts "gameId::"+ @gameId
+	 	puts "sportId::"+ @sportId
+	 	@gameType = nil
+	 	case @sportId
+	 	when "1" then
+	 		puts "initializing mlbObject"
+	 		@gameType = MLBNews.new
+=begin
+	 	when 2 then
+	 		gameType = MLBNews.new
+	 	when 3 then
+	 		gameType = MLBNews.new
 	 	else
-	 		# in-progress
+	 		gameType = MLBNews.new
+=end
 	 	end
-	 	
 	 end
 
 	 def get_recap_of_game
@@ -21,8 +30,7 @@ class SportsNews
 	 end
 
 	 def get_preview_of_game
-	 	mlbnews = MLBNews.new
-	 	mlbnews.get_preview_of_game(@gameId)
+	 	@gameType.get_preview_of_game(@gameId)
 	 end
 
 	 def get_game_bullets(gameId = "1677896")
