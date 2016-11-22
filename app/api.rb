@@ -1,13 +1,8 @@
 LIMIT = 5
 
-=begin
 before do
-  request.body.rewind
-  @params = JSON.parse( request.body.read, symbolize_names:true )
-  
   content_type 'application/json'
 end
-=end
 
 get '/sports_news' do
   news = SportsNews.new("1677896")
