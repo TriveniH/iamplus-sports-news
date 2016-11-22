@@ -1,0 +1,1282 @@
+# Logfile created on 2016-11-08 12:26:47 +0530 by logger.rb/54362
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : Environment: development
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : No known dispatcher detected.
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : Application: API Server
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : Installing Net instrumentation
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : Installing Sinatra instrumentation
+[2016-11-08 12:26:47 +0530 triveni-K55VM (5449)] INFO : Finished instrumentation
+[2016-11-08 12:26:48 +0530 triveni-K55VM (5449)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 12:26:48 +0530 triveni-K55VM (5449)] INFO : Installing Mongo instrumentation
+[2016-11-08 12:26:48 +0530 triveni-K55VM (5449)] INFO : Installing Redis Instrumentation
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Environment: development
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : No known dispatcher detected.
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Application: API Server
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Installing Net instrumentation
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Installing Sinatra instrumentation
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Finished instrumentation
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Installing Mongo instrumentation
+[2016-11-08 12:28:30 +0530 triveni-K55VM (5653)] INFO : Installing Redis Instrumentation
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : Environment: development
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : No known dispatcher detected.
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : Application: API Server
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : Installing Net instrumentation
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : Installing Sinatra instrumentation
+[2016-11-08 12:33:08 +0530 triveni-K55VM (5745)] INFO : Finished instrumentation
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : Environment: development
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : No known dispatcher detected.
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : Application: API Server
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : Installing Net instrumentation
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : Installing Sinatra instrumentation
+[2016-11-08 12:36:43 +0530 triveni-K55VM (5935)] INFO : Finished instrumentation
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : Environment: development
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : No known dispatcher detected.
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : Application: API Server
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : Installing Net instrumentation
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : Installing Sinatra instrumentation
+[2016-11-08 12:37:30 +0530 triveni-K55VM (5964)] INFO : Finished instrumentation
+[2016-11-08 12:37:31 +0530 triveni-K55VM (5964)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 12:37:31 +0530 triveni-K55VM (5964)] INFO : Installing Mongo instrumentation
+[2016-11-08 12:37:31 +0530 triveni-K55VM (5964)] INFO : Installing Redis Instrumentation
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : Environment: development
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : No known dispatcher detected.
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : Application: API Server
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : Installing Net instrumentation
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : Installing Sinatra instrumentation
+[2016-11-08 12:38:28 +0530 triveni-K55VM (5997)] INFO : Finished instrumentation
+[2016-11-08 12:38:29 +0530 triveni-K55VM (5997)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 12:38:29 +0530 triveni-K55VM (5997)] INFO : Installing Mongo instrumentation
+[2016-11-08 12:38:29 +0530 triveni-K55VM (5997)] INFO : Installing Redis Instrumentation
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : Environment: development
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : No known dispatcher detected.
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : Application: API Server
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : Installing Net instrumentation
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : Installing Sinatra instrumentation
+[2016-11-08 12:45:22 +0530 triveni-K55VM (6147)] INFO : Finished instrumentation
+[2016-11-08 12:45:23 +0530 triveni-K55VM (6147)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 12:45:23 +0530 triveni-K55VM (6147)] INFO : Installing Mongo instrumentation
+[2016-11-08 12:45:23 +0530 triveni-K55VM (6147)] INFO : Installing Redis Instrumentation
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : Environment: development
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : No known dispatcher detected.
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : Application: API Server
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : Installing Net instrumentation
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : Installing Sinatra instrumentation
+[2016-11-08 12:46:27 +0530 triveni-K55VM (6163)] INFO : Finished instrumentation
+[2016-11-08 12:46:28 +0530 triveni-K55VM (6163)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 12:46:28 +0530 triveni-K55VM (6163)] INFO : Installing Mongo instrumentation
+[2016-11-08 12:46:28 +0530 triveni-K55VM (6163)] INFO : Installing Redis Instrumentation
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : Environment: development
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : No known dispatcher detected.
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : Application: API Server
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : Installing Net instrumentation
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : Installing Sinatra instrumentation
+[2016-11-08 12:47:55 +0530 triveni-K55VM (6197)] INFO : Finished instrumentation
+[2016-11-08 12:47:56 +0530 triveni-K55VM (6197)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 12:47:56 +0530 triveni-K55VM (6197)] INFO : Installing Mongo instrumentation
+[2016-11-08 12:47:56 +0530 triveni-K55VM (6197)] INFO : Installing Redis Instrumentation
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : Environment: development
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : No known dispatcher detected.
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : Application: API Server
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : Installing Net instrumentation
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : Installing Sinatra instrumentation
+[2016-11-08 14:19:57 +0530 triveni-K55VM (6786)] INFO : Finished instrumentation
+[2016-11-08 14:19:58 +0530 triveni-K55VM (6786)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 14:19:58 +0530 triveni-K55VM (6786)] INFO : Installing Mongo instrumentation
+[2016-11-08 14:19:58 +0530 triveni-K55VM (6786)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Environment: development
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : No known dispatcher detected.
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Application: API Server
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Installing Net instrumentation
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Finished instrumentation
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:15:55 +0530 triveni-K55VM (7637)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : Environment: development
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : No known dispatcher detected.
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : Application: API Server
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : Installing Net instrumentation
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:28:35 +0530 triveni-K55VM (7822)] INFO : Finished instrumentation
+[2016-11-08 15:28:36 +0530 triveni-K55VM (7822)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:28:36 +0530 triveni-K55VM (7822)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:28:36 +0530 triveni-K55VM (7822)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Environment: development
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : No known dispatcher detected.
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Application: API Server
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Installing Net instrumentation
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Finished instrumentation
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:29:46 +0530 triveni-K55VM (7884)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : Environment: development
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : No known dispatcher detected.
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : Application: API Server
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : Installing Net instrumentation
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:31:00 +0530 triveni-K55VM (7911)] INFO : Finished instrumentation
+[2016-11-08 15:31:01 +0530 triveni-K55VM (7911)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:31:01 +0530 triveni-K55VM (7911)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:31:01 +0530 triveni-K55VM (7911)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : Environment: development
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : No known dispatcher detected.
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : Application: API Server
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : Installing Net instrumentation
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:31:46 +0530 triveni-K55VM (7957)] INFO : Finished instrumentation
+[2016-11-08 15:31:47 +0530 triveni-K55VM (7957)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:31:47 +0530 triveni-K55VM (7957)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:31:47 +0530 triveni-K55VM (7957)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : Environment: development
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : No known dispatcher detected.
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : Application: API Server
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : Installing Net instrumentation
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:32:44 +0530 triveni-K55VM (7989)] INFO : Finished instrumentation
+[2016-11-08 15:32:45 +0530 triveni-K55VM (7989)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:32:45 +0530 triveni-K55VM (7989)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:32:45 +0530 triveni-K55VM (7989)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : Environment: development
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : No known dispatcher detected.
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : Application: API Server
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : Installing Net instrumentation
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:37:18 +0530 triveni-K55VM (8142)] INFO : Finished instrumentation
+[2016-11-08 15:37:19 +0530 triveni-K55VM (8142)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:37:19 +0530 triveni-K55VM (8142)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:37:19 +0530 triveni-K55VM (8142)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : Environment: development
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : No known dispatcher detected.
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : Application: API Server
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : Installing Net instrumentation
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:38:07 +0530 triveni-K55VM (8182)] INFO : Finished instrumentation
+[2016-11-08 15:38:08 +0530 triveni-K55VM (8182)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:38:08 +0530 triveni-K55VM (8182)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:38:08 +0530 triveni-K55VM (8182)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : Environment: development
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : No known dispatcher detected.
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : Application: API Server
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : Installing Net instrumentation
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:42:08 +0530 triveni-K55VM (8267)] INFO : Finished instrumentation
+[2016-11-08 15:42:09 +0530 triveni-K55VM (8267)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:42:09 +0530 triveni-K55VM (8267)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:42:09 +0530 triveni-K55VM (8267)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : Environment: development
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : No known dispatcher detected.
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : Application: API Server
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : Installing Net instrumentation
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:48:23 +0530 triveni-K55VM (8392)] INFO : Finished instrumentation
+[2016-11-08 15:48:24 +0530 triveni-K55VM (8392)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:48:24 +0530 triveni-K55VM (8392)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:48:24 +0530 triveni-K55VM (8392)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : Environment: development
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : No known dispatcher detected.
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : Application: API Server
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : Installing Net instrumentation
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:53:50 +0530 triveni-K55VM (8489)] INFO : Finished instrumentation
+[2016-11-08 15:53:51 +0530 triveni-K55VM (8489)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:53:51 +0530 triveni-K55VM (8489)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:53:51 +0530 triveni-K55VM (8489)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : Environment: development
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : No known dispatcher detected.
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : Application: API Server
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : Installing Net instrumentation
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:55:32 +0530 triveni-K55VM (8526)] INFO : Finished instrumentation
+[2016-11-08 15:55:33 +0530 triveni-K55VM (8526)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:55:33 +0530 triveni-K55VM (8526)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:55:33 +0530 triveni-K55VM (8526)] INFO : Installing Redis Instrumentation
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Environment: development
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : No known dispatcher detected.
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Application: API Server
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Installing Net instrumentation
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Installing Sinatra instrumentation
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Finished instrumentation
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Installing Mongo instrumentation
+[2016-11-08 15:55:48 +0530 triveni-K55VM (8538)] INFO : Installing Redis Instrumentation
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Environment: development
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : No known dispatcher detected.
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Application: API Server
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Installing Net instrumentation
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Installing Sinatra instrumentation
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Finished instrumentation
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Installing Mongo instrumentation
+[2016-11-08 16:22:10 +0530 triveni-K55VM (8838)] INFO : Installing Redis Instrumentation
+[2016-11-08 16:22:42 +0530 triveni-K55VM (8869)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 16:22:42 +0530 triveni-K55VM (8869)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 16:22:42 +0530 triveni-K55VM (8869)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 16:22:42 +0530 triveni-K55VM (8869)] INFO : Environment: development
+[2016-11-08 16:22:42 +0530 triveni-K55VM (8869)] INFO : No known dispatcher detected.
+[2016-11-08 16:22:42 +0530 triveni-K55VM (8869)] INFO : Application: API Server
+[2016-11-08 16:22:42 +0530 triveni-K55VM (8869)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 16:22:43 +0530 triveni-K55VM (8869)] INFO : Installing Net instrumentation
+[2016-11-08 16:22:43 +0530 triveni-K55VM (8869)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 16:22:43 +0530 triveni-K55VM (8869)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 16:22:43 +0530 triveni-K55VM (8869)] INFO : Installing Sinatra instrumentation
+[2016-11-08 16:22:43 +0530 triveni-K55VM (8869)] INFO : Finished instrumentation
+[2016-11-08 16:22:43 +0530 triveni-K55VM (8869)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 16:22:43 +0530 triveni-K55VM (8869)] INFO : Installing Mongo instrumentation
+[2016-11-08 16:22:43 +0530 triveni-K55VM (8869)] INFO : Installing Redis Instrumentation
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : Environment: development
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : No known dispatcher detected.
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : Application: API Server
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : Installing Net instrumentation
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : Installing Sinatra instrumentation
+[2016-11-08 16:24:27 +0530 triveni-K55VM (8906)] INFO : Finished instrumentation
+[2016-11-08 16:24:28 +0530 triveni-K55VM (8906)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 16:24:28 +0530 triveni-K55VM (8906)] INFO : Installing Mongo instrumentation
+[2016-11-08 16:24:28 +0530 triveni-K55VM (8906)] INFO : Installing Redis Instrumentation
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : Environment: development
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : No known dispatcher detected.
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : Application: API Server
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : Installing Net instrumentation
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : Installing Sinatra instrumentation
+[2016-11-08 16:25:21 +0530 triveni-K55VM (8955)] INFO : Finished instrumentation
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : Environment: development
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : No known dispatcher detected.
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : Application: API Server
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : Installing Net instrumentation
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : Installing Sinatra instrumentation
+[2016-11-08 16:25:28 +0530 triveni-K55VM (8966)] INFO : Finished instrumentation
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : Environment: development
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : No known dispatcher detected.
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : Application: API Server
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : Installing Net instrumentation
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : Installing Sinatra instrumentation
+[2016-11-08 16:25:34 +0530 triveni-K55VM (8976)] INFO : Finished instrumentation
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : Environment: development
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : No known dispatcher detected.
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : Application: API Server
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : Installing Net instrumentation
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : Installing Sinatra instrumentation
+[2016-11-08 16:25:43 +0530 triveni-K55VM (8982)] INFO : Finished instrumentation
+[2016-11-08 16:25:44 +0530 triveni-K55VM (8982)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 16:25:44 +0530 triveni-K55VM (8982)] INFO : Installing Mongo instrumentation
+[2016-11-08 16:25:44 +0530 triveni-K55VM (8982)] INFO : Installing Redis Instrumentation
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : Environment: development
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : No known dispatcher detected.
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : Application: API Server
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : Installing Net instrumentation
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : Installing Sinatra instrumentation
+[2016-11-08 16:26:30 +0530 triveni-K55VM (9014)] INFO : Finished instrumentation
+[2016-11-08 16:26:31 +0530 triveni-K55VM (9014)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 16:26:31 +0530 triveni-K55VM (9014)] INFO : Installing Mongo instrumentation
+[2016-11-08 16:26:31 +0530 triveni-K55VM (9014)] INFO : Installing Redis Instrumentation
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : Environment: development
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : No known dispatcher detected.
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : Application: API Server
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : Installing Net instrumentation
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : Installing Sinatra instrumentation
+[2016-11-08 17:01:39 +0530 triveni-K55VM (9555)] INFO : Finished instrumentation
+[2016-11-08 17:01:40 +0530 triveni-K55VM (9555)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 17:01:40 +0530 triveni-K55VM (9555)] INFO : Installing Mongo instrumentation
+[2016-11-08 17:01:40 +0530 triveni-K55VM (9555)] INFO : Installing Redis Instrumentation
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : Environment: development
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : No known dispatcher detected.
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : Application: API Server
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : Installing Net instrumentation
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : Installing Sinatra instrumentation
+[2016-11-08 17:03:03 +0530 triveni-K55VM (9599)] INFO : Finished instrumentation
+[2016-11-08 17:03:04 +0530 triveni-K55VM (9599)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 17:03:04 +0530 triveni-K55VM (9599)] INFO : Installing Mongo instrumentation
+[2016-11-08 17:03:04 +0530 triveni-K55VM (9599)] INFO : Installing Redis Instrumentation
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : Environment: development
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : No known dispatcher detected.
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : Application: API Server
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : Installing Net instrumentation
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : Installing Sinatra instrumentation
+[2016-11-08 17:04:21 +0530 triveni-K55VM (9657)] INFO : Finished instrumentation
+[2016-11-08 17:04:22 +0530 triveni-K55VM (9657)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 17:04:22 +0530 triveni-K55VM (9657)] INFO : Installing Mongo instrumentation
+[2016-11-08 17:04:22 +0530 triveni-K55VM (9657)] INFO : Installing Redis Instrumentation
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : Environment: development
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : No known dispatcher detected.
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : Application: API Server
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : Installing Net instrumentation
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : Installing Sinatra instrumentation
+[2016-11-08 17:04:51 +0530 triveni-K55VM (9685)] INFO : Finished instrumentation
+[2016-11-08 17:04:52 +0530 triveni-K55VM (9685)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 17:04:52 +0530 triveni-K55VM (9685)] INFO : Installing Mongo instrumentation
+[2016-11-08 17:04:52 +0530 triveni-K55VM (9685)] INFO : Installing Redis Instrumentation
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : Environment: development
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : No known dispatcher detected.
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : Application: API Server
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : Installing Net instrumentation
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : Installing Sinatra instrumentation
+[2016-11-08 17:05:44 +0530 triveni-K55VM (9716)] INFO : Finished instrumentation
+[2016-11-08 17:05:45 +0530 triveni-K55VM (9716)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 17:05:45 +0530 triveni-K55VM (9716)] INFO : Installing Mongo instrumentation
+[2016-11-08 17:05:45 +0530 triveni-K55VM (9716)] INFO : Installing Redis Instrumentation
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : Environment: development
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : No known dispatcher detected.
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : Application: API Server
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : Installing Net instrumentation
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : Installing Sinatra instrumentation
+[2016-11-08 17:36:46 +0530 triveni-K55VM (10144)] INFO : Finished instrumentation
+[2016-11-08 17:36:47 +0530 triveni-K55VM (10144)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 17:36:47 +0530 triveni-K55VM (10144)] INFO : Installing Mongo instrumentation
+[2016-11-08 17:36:47 +0530 triveni-K55VM (10144)] INFO : Installing Redis Instrumentation
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : Environment: development
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : No known dispatcher detected.
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : Application: API Server
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : Installing Net instrumentation
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : Installing Sinatra instrumentation
+[2016-11-08 17:45:38 +0530 triveni-K55VM (10279)] INFO : Finished instrumentation
+[2016-11-08 17:45:39 +0530 triveni-K55VM (10279)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 17:45:39 +0530 triveni-K55VM (10279)] INFO : Installing Mongo instrumentation
+[2016-11-08 17:45:39 +0530 triveni-K55VM (10279)] INFO : Installing Redis Instrumentation
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : Environment: development
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : No known dispatcher detected.
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : Application: API Server
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : Installing Net instrumentation
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : Installing Sinatra instrumentation
+[2016-11-08 17:47:21 +0530 triveni-K55VM (10351)] INFO : Finished instrumentation
+[2016-11-08 17:47:22 +0530 triveni-K55VM (10351)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 17:47:22 +0530 triveni-K55VM (10351)] INFO : Installing Mongo instrumentation
+[2016-11-08 17:47:22 +0530 triveni-K55VM (10351)] INFO : Installing Redis Instrumentation
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : Environment: development
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : No known dispatcher detected.
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : Application: API Server
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] WARN : Agent configured not to send data in this environment.
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : Installing Net instrumentation
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : Installing Sinatra instrumentation
+[2016-11-08 17:53:32 +0530 triveni-K55VM (10461)] INFO : Finished instrumentation
+[2016-11-08 17:53:33 +0530 triveni-K55VM (10461)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-08 17:53:33 +0530 triveni-K55VM (10461)] INFO : Installing Mongo instrumentation
+[2016-11-08 17:53:33 +0530 triveni-K55VM (10461)] INFO : Installing Redis Instrumentation
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : Environment: development
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : No known dispatcher detected.
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : Application: API Server
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : Installing Net instrumentation
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : Installing Sinatra instrumentation
+[2016-11-09 11:29:56 +0530 triveni-K55VM (4848)] INFO : Finished instrumentation
+[2016-11-09 11:29:57 +0530 triveni-K55VM (4848)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 11:29:57 +0530 triveni-K55VM (4848)] INFO : Installing Mongo instrumentation
+[2016-11-09 11:29:57 +0530 triveni-K55VM (4848)] INFO : Installing Redis Instrumentation
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : Environment: development
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : No known dispatcher detected.
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : Application: API Server
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : Installing Net instrumentation
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : Installing Sinatra instrumentation
+[2016-11-09 11:34:32 +0530 triveni-K55VM (5045)] INFO : Finished instrumentation
+[2016-11-09 11:34:33 +0530 triveni-K55VM (5045)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 11:34:33 +0530 triveni-K55VM (5045)] INFO : Installing Mongo instrumentation
+[2016-11-09 11:34:33 +0530 triveni-K55VM (5045)] INFO : Installing Redis Instrumentation
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Environment: development
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : No known dispatcher detected.
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Application: API Server
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Installing Net instrumentation
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Installing Sinatra instrumentation
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Finished instrumentation
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Installing Mongo instrumentation
+[2016-11-09 11:55:59 +0530 triveni-K55VM (5423)] INFO : Installing Redis Instrumentation
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Environment: development
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : No known dispatcher detected.
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Application: API Server
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Installing Net instrumentation
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Installing Sinatra instrumentation
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Finished instrumentation
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Installing Mongo instrumentation
+[2016-11-09 11:59:16 +0530 triveni-K55VM (5501)] INFO : Installing Redis Instrumentation
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : Environment: development
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : No known dispatcher detected.
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : Application: API Server
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : Installing Net instrumentation
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : Installing Sinatra instrumentation
+[2016-11-09 12:02:51 +0530 triveni-K55VM (5722)] INFO : Finished instrumentation
+[2016-11-09 12:02:52 +0530 triveni-K55VM (5722)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 12:02:52 +0530 triveni-K55VM (5722)] INFO : Installing Mongo instrumentation
+[2016-11-09 12:02:52 +0530 triveni-K55VM (5722)] INFO : Installing Redis Instrumentation
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : Environment: development
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : No known dispatcher detected.
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : Application: API Server
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : Installing Net instrumentation
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : Installing Sinatra instrumentation
+[2016-11-09 12:04:15 +0530 triveni-K55VM (5789)] INFO : Finished instrumentation
+[2016-11-09 12:04:16 +0530 triveni-K55VM (5789)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 12:04:16 +0530 triveni-K55VM (5789)] INFO : Installing Mongo instrumentation
+[2016-11-09 12:04:16 +0530 triveni-K55VM (5789)] INFO : Installing Redis Instrumentation
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : Environment: development
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : No known dispatcher detected.
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : Application: API Server
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : Installing Net instrumentation
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : Installing Sinatra instrumentation
+[2016-11-09 12:10:26 +0530 triveni-K55VM (5944)] INFO : Finished instrumentation
+[2016-11-09 12:10:27 +0530 triveni-K55VM (5944)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 12:10:27 +0530 triveni-K55VM (5944)] INFO : Installing Mongo instrumentation
+[2016-11-09 12:10:27 +0530 triveni-K55VM (5944)] INFO : Installing Redis Instrumentation
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : Environment: development
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : No known dispatcher detected.
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : Application: API Server
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : Installing Net instrumentation
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : Installing Sinatra instrumentation
+[2016-11-09 12:11:07 +0530 triveni-K55VM (5969)] INFO : Finished instrumentation
+[2016-11-09 12:11:08 +0530 triveni-K55VM (5969)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 12:11:08 +0530 triveni-K55VM (5969)] INFO : Installing Mongo instrumentation
+[2016-11-09 12:11:08 +0530 triveni-K55VM (5969)] INFO : Installing Redis Instrumentation
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : Environment: development
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : No known dispatcher detected.
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : Application: API Server
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : Installing Net instrumentation
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : Installing Sinatra instrumentation
+[2016-11-09 12:36:37 +0530 triveni-K55VM (6514)] INFO : Finished instrumentation
+[2016-11-09 12:36:38 +0530 triveni-K55VM (6514)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 12:36:38 +0530 triveni-K55VM (6514)] INFO : Installing Mongo instrumentation
+[2016-11-09 12:36:38 +0530 triveni-K55VM (6514)] INFO : Installing Redis Instrumentation
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Environment: development
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : No known dispatcher detected.
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Application: API Server
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Installing Net instrumentation
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Installing Sinatra instrumentation
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Finished instrumentation
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Installing Mongo instrumentation
+[2016-11-09 12:38:17 +0530 triveni-K55VM (6539)] INFO : Installing Redis Instrumentation
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : Environment: development
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : No known dispatcher detected.
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : Application: API Server
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : Installing Net instrumentation
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : Installing Sinatra instrumentation
+[2016-11-09 12:42:47 +0530 triveni-K55VM (6661)] INFO : Finished instrumentation
+[2016-11-09 12:42:48 +0530 triveni-K55VM (6661)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 12:42:48 +0530 triveni-K55VM (6661)] INFO : Installing Mongo instrumentation
+[2016-11-09 12:42:48 +0530 triveni-K55VM (6661)] INFO : Installing Redis Instrumentation
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : Environment: development
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : No known dispatcher detected.
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : Application: API Server
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : Installing Net instrumentation
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : Installing Sinatra instrumentation
+[2016-11-09 12:43:31 +0530 triveni-K55VM (6685)] INFO : Finished instrumentation
+[2016-11-09 12:43:32 +0530 triveni-K55VM (6685)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 12:43:32 +0530 triveni-K55VM (6685)] INFO : Installing Mongo instrumentation
+[2016-11-09 12:43:32 +0530 triveni-K55VM (6685)] INFO : Installing Redis Instrumentation
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/twitter-skill)
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : Environment: development
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : No known dispatcher detected.
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : Application: API Server
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] WARN : Agent configured not to send data in this environment.
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : Installing Net instrumentation
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : Installing Sinatra instrumentation
+[2016-11-09 13:12:25 +0530 triveni-K55VM (7150)] INFO : Finished instrumentation
+[2016-11-09 13:12:26 +0530 triveni-K55VM (7150)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-09 13:12:26 +0530 triveni-K55VM (7150)] INFO : Installing Mongo instrumentation
+[2016-11-09 13:12:26 +0530 triveni-K55VM (7150)] INFO : Installing Redis Instrumentation
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : Environment: development
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : No known dispatcher detected.
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : Application: API Server
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : Installing Net instrumentation
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : Installing Sinatra instrumentation
+[2016-11-21 15:59:52 +0530 triveni-K55VM (7006)] INFO : Finished instrumentation
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : Environment: development
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : No known dispatcher detected.
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : Application: API Server
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : Installing Net instrumentation
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:01:00 +0530 triveni-K55VM (7030)] INFO : Finished instrumentation
+[2016-11-21 16:01:01 +0530 triveni-K55VM (7030)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:01:01 +0530 triveni-K55VM (7030)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:01:01 +0530 triveni-K55VM (7030)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : Environment: development
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : No known dispatcher detected.
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : Application: API Server
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : Installing Net instrumentation
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:02:58 +0530 triveni-K55VM (7067)] INFO : Finished instrumentation
+[2016-11-21 16:02:59 +0530 triveni-K55VM (7067)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:02:59 +0530 triveni-K55VM (7067)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:02:59 +0530 triveni-K55VM (7067)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : Environment: development
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : No known dispatcher detected.
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : Application: API Server
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : Installing Net instrumentation
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:03:29 +0530 triveni-K55VM (7089)] INFO : Finished instrumentation
+[2016-11-21 16:03:30 +0530 triveni-K55VM (7089)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:03:30 +0530 triveni-K55VM (7089)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:03:30 +0530 triveni-K55VM (7089)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : Environment: development
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : No known dispatcher detected.
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : Application: API Server
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : Installing Net instrumentation
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:04:16 +0530 triveni-K55VM (7116)] INFO : Finished instrumentation
+[2016-11-21 16:04:17 +0530 triveni-K55VM (7116)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:04:17 +0530 triveni-K55VM (7116)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:04:17 +0530 triveni-K55VM (7116)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : Environment: development
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : No known dispatcher detected.
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : Application: API Server
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : Installing Net instrumentation
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:04:48 +0530 triveni-K55VM (7142)] INFO : Finished instrumentation
+[2016-11-21 16:04:49 +0530 triveni-K55VM (7142)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:04:49 +0530 triveni-K55VM (7142)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:04:49 +0530 triveni-K55VM (7142)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : Environment: development
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : No known dispatcher detected.
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : Application: API Server
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : Installing Net instrumentation
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:05:20 +0530 triveni-K55VM (7169)] INFO : Finished instrumentation
+[2016-11-21 16:05:21 +0530 triveni-K55VM (7169)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:05:21 +0530 triveni-K55VM (7169)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:05:21 +0530 triveni-K55VM (7169)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Environment: development
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : No known dispatcher detected.
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Application: API Server
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Installing Net instrumentation
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Finished instrumentation
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:06:02 +0530 triveni-K55VM (7201)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : Environment: development
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : No known dispatcher detected.
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : Application: API Server
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : Installing Net instrumentation
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:07:46 +0530 triveni-K55VM (7257)] INFO : Finished instrumentation
+[2016-11-21 16:07:47 +0530 triveni-K55VM (7257)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:07:47 +0530 triveni-K55VM (7257)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:07:47 +0530 triveni-K55VM (7257)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : Environment: development
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : No known dispatcher detected.
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : Application: API Server
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : Installing Net instrumentation
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:08:40 +0530 triveni-K55VM (7286)] INFO : Finished instrumentation
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : Environment: development
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : No known dispatcher detected.
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : Application: API Server
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : Installing Net instrumentation
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:08:48 +0530 triveni-K55VM (7294)] INFO : Finished instrumentation
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Environment: development
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : No known dispatcher detected.
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Application: API Server
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Installing Net instrumentation
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Finished instrumentation
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:09:12 +0530 triveni-K55VM (7307)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : Environment: development
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : No known dispatcher detected.
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : Application: API Server
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : Installing Net instrumentation
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:10:32 +0530 triveni-K55VM (7353)] INFO : Finished instrumentation
+[2016-11-21 16:10:33 +0530 triveni-K55VM (7353)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:10:33 +0530 triveni-K55VM (7353)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:10:33 +0530 triveni-K55VM (7353)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : Environment: development
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : No known dispatcher detected.
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : Application: API Server
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : Installing Net instrumentation
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:12:49 +0530 triveni-K55VM (7514)] INFO : Finished instrumentation
+[2016-11-21 16:12:50 +0530 triveni-K55VM (7514)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:12:50 +0530 triveni-K55VM (7514)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:12:50 +0530 triveni-K55VM (7514)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : Environment: development
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : No known dispatcher detected.
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : Application: API Server
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : Installing Net instrumentation
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:29:38 +0530 triveni-K55VM (8068)] INFO : Finished instrumentation
+[2016-11-21 16:29:39 +0530 triveni-K55VM (8068)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:29:39 +0530 triveni-K55VM (8068)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:29:39 +0530 triveni-K55VM (8068)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : Environment: development
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : No known dispatcher detected.
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : Application: API Server
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : Installing Net instrumentation
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:30:26 +0530 triveni-K55VM (8094)] INFO : Finished instrumentation
+[2016-11-21 16:30:27 +0530 triveni-K55VM (8094)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:30:27 +0530 triveni-K55VM (8094)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:30:27 +0530 triveni-K55VM (8094)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : Environment: development
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : No known dispatcher detected.
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : Application: API Server
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : Installing Net instrumentation
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:31:09 +0530 triveni-K55VM (8116)] INFO : Finished instrumentation
+[2016-11-21 16:31:10 +0530 triveni-K55VM (8116)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:31:10 +0530 triveni-K55VM (8116)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:31:10 +0530 triveni-K55VM (8116)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : Environment: development
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : No known dispatcher detected.
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : Application: API Server
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : Installing Net instrumentation
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:33:31 +0530 triveni-K55VM (8157)] INFO : Finished instrumentation
+[2016-11-21 16:33:32 +0530 triveni-K55VM (8157)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:33:32 +0530 triveni-K55VM (8157)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:33:32 +0530 triveni-K55VM (8157)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : Environment: development
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : No known dispatcher detected.
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : Application: API Server
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : Installing Net instrumentation
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:34:16 +0530 triveni-K55VM (8181)] INFO : Finished instrumentation
+[2016-11-21 16:34:17 +0530 triveni-K55VM (8181)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:34:17 +0530 triveni-K55VM (8181)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:34:17 +0530 triveni-K55VM (8181)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : Environment: development
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : No known dispatcher detected.
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : Application: API Server
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : Installing Net instrumentation
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:38:11 +0530 triveni-K55VM (8249)] INFO : Finished instrumentation
+[2016-11-21 16:38:12 +0530 triveni-K55VM (8249)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:38:12 +0530 triveni-K55VM (8249)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:38:12 +0530 triveni-K55VM (8249)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : Environment: development
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : No known dispatcher detected.
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : Application: API Server
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : Installing Net instrumentation
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:39:24 +0530 triveni-K55VM (8285)] INFO : Finished instrumentation
+[2016-11-21 16:39:25 +0530 triveni-K55VM (8285)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:39:25 +0530 triveni-K55VM (8285)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:39:25 +0530 triveni-K55VM (8285)] INFO : Installing Redis Instrumentation
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : Environment: development
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : No known dispatcher detected.
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : Application: API Server
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : Installing Net instrumentation
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : Installing Sinatra instrumentation
+[2016-11-21 16:53:11 +0530 triveni-K55VM (8491)] INFO : Finished instrumentation
+[2016-11-21 16:53:12 +0530 triveni-K55VM (8491)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 16:53:12 +0530 triveni-K55VM (8491)] INFO : Installing Mongo instrumentation
+[2016-11-21 16:53:12 +0530 triveni-K55VM (8491)] INFO : Installing Redis Instrumentation
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : Environment: development
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : No known dispatcher detected.
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : Application: API Server
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : Installing Net instrumentation
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : Installing Sinatra instrumentation
+[2016-11-21 17:00:25 +0530 triveni-K55VM (8564)] INFO : Finished instrumentation
+[2016-11-21 17:00:26 +0530 triveni-K55VM (8564)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 17:00:26 +0530 triveni-K55VM (8564)] INFO : Installing Mongo instrumentation
+[2016-11-21 17:00:26 +0530 triveni-K55VM (8564)] INFO : Installing Redis Instrumentation
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : Environment: development
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : No known dispatcher detected.
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : Application: API Server
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : Installing Net instrumentation
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : Installing Sinatra instrumentation
+[2016-11-21 17:30:38 +0530 triveni-K55VM (9033)] INFO : Finished instrumentation
+[2016-11-21 17:30:39 +0530 triveni-K55VM (9033)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 17:30:39 +0530 triveni-K55VM (9033)] INFO : Installing Mongo instrumentation
+[2016-11-21 17:30:39 +0530 triveni-K55VM (9033)] INFO : Installing Redis Instrumentation
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Environment: development
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : No known dispatcher detected.
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Application: API Server
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Installing Net instrumentation
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Installing Sinatra instrumentation
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Finished instrumentation
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Installing Mongo instrumentation
+[2016-11-21 17:31:18 +0530 triveni-K55VM (9059)] INFO : Installing Redis Instrumentation
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : Environment: development
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : No known dispatcher detected.
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : Application: API Server
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : Installing Net instrumentation
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : Installing Sinatra instrumentation
+[2016-11-21 17:34:00 +0530 triveni-K55VM (9130)] INFO : Finished instrumentation
+[2016-11-21 17:34:01 +0530 triveni-K55VM (9130)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 17:34:01 +0530 triveni-K55VM (9130)] INFO : Installing Mongo instrumentation
+[2016-11-21 17:34:01 +0530 triveni-K55VM (9130)] INFO : Installing Redis Instrumentation
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : Environment: development
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : No known dispatcher detected.
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : Application: API Server
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : Installing Net instrumentation
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : Installing Sinatra instrumentation
+[2016-11-21 18:17:36 +0530 triveni-K55VM (9817)] INFO : Finished instrumentation
+[2016-11-21 18:17:37 +0530 triveni-K55VM (9817)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 18:17:37 +0530 triveni-K55VM (9817)] INFO : Installing Mongo instrumentation
+[2016-11-21 18:17:37 +0530 triveni-K55VM (9817)] INFO : Installing Redis Instrumentation
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : Environment: development
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : No known dispatcher detected.
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : Application: API Server
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : Installing Net instrumentation
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : Installing Sinatra instrumentation
+[2016-11-21 18:18:53 +0530 triveni-K55VM (9843)] INFO : Finished instrumentation
+[2016-11-21 18:18:54 +0530 triveni-K55VM (9843)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 18:18:54 +0530 triveni-K55VM (9843)] INFO : Installing Mongo instrumentation
+[2016-11-21 18:18:54 +0530 triveni-K55VM (9843)] INFO : Installing Redis Instrumentation
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : Environment: development
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : No known dispatcher detected.
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : Application: API Server
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : Installing Net instrumentation
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : Installing Sinatra instrumentation
+[2016-11-21 18:20:14 +0530 triveni-K55VM (9887)] INFO : Finished instrumentation
+[2016-11-21 18:20:15 +0530 triveni-K55VM (9887)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 18:20:15 +0530 triveni-K55VM (9887)] INFO : Installing Mongo instrumentation
+[2016-11-21 18:20:15 +0530 triveni-K55VM (9887)] INFO : Installing Redis Instrumentation
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : Environment: development
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : No known dispatcher detected.
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : Application: API Server
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : Installing Net instrumentation
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : Installing Sinatra instrumentation
+[2016-11-21 18:21:07 +0530 triveni-K55VM (9935)] INFO : Finished instrumentation
+[2016-11-21 18:21:08 +0530 triveni-K55VM (9935)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 18:21:08 +0530 triveni-K55VM (9935)] INFO : Installing Mongo instrumentation
+[2016-11-21 18:21:08 +0530 triveni-K55VM (9935)] INFO : Installing Redis Instrumentation
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : Environment: development
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : No known dispatcher detected.
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : Application: API Server
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : Installing Net instrumentation
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : Installing Sinatra instrumentation
+[2016-11-21 18:22:28 +0530 triveni-K55VM (9994)] INFO : Finished instrumentation
+[2016-11-21 18:22:29 +0530 triveni-K55VM (9994)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 18:22:29 +0530 triveni-K55VM (9994)] INFO : Installing Mongo instrumentation
+[2016-11-21 18:22:29 +0530 triveni-K55VM (9994)] INFO : Installing Redis Instrumentation
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Environment: development
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : No known dispatcher detected.
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Application: API Server
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Installing Net instrumentation
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Installing Sinatra instrumentation
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Finished instrumentation
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Installing Mongo instrumentation
+[2016-11-21 18:23:55 +0530 triveni-K55VM (10044)] INFO : Installing Redis Instrumentation
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : Environment: development
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : No known dispatcher detected.
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : Application: API Server
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : Installing Net instrumentation
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : Installing Sinatra instrumentation
+[2016-11-21 18:26:45 +0530 triveni-K55VM (10141)] INFO : Finished instrumentation
+[2016-11-21 18:26:46 +0530 triveni-K55VM (10141)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 18:26:46 +0530 triveni-K55VM (10141)] INFO : Installing Mongo instrumentation
+[2016-11-21 18:26:46 +0530 triveni-K55VM (10141)] INFO : Installing Redis Instrumentation
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/work/sports-news)
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : Environment: development
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : No known dispatcher detected.
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : Application: API Server
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] WARN : Agent configured not to send data in this environment.
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : Installing Net instrumentation
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : Installing Sinatra instrumentation
+[2016-11-21 18:29:07 +0530 triveni-K55VM (10222)] INFO : Finished instrumentation
+[2016-11-21 18:29:08 +0530 triveni-K55VM (10222)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-21 18:29:08 +0530 triveni-K55VM (10222)] INFO : Installing Mongo instrumentation
+[2016-11-21 18:29:08 +0530 triveni-K55VM (10222)] INFO : Installing Redis Instrumentation

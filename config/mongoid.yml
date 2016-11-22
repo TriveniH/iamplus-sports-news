@@ -1,0 +1,27 @@
+test:
+  clients:
+    default:
+      database: skills_template_sinatra
+      hosts:
+        - localhost:27017
+  options:
+    raise_not_found_error: false
+
+
+development:
+  clients:
+    default:
+      database: skills_template_sinatra_development
+      hosts:
+        - localhost:27017
+  options:
+    raise_not_found_error: false
+
+
+production:
+  clients:
+    default:
+      uri: <%= ENV[ 'MONGO_DB_URI'] %>
+  options:
+    raise_not_found_error: false
+
