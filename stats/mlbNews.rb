@@ -14,7 +14,9 @@ class MLBNews
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(Constants::MLB_API_KEY, Constants::MLB_SECRET)
 		puts "URL::"+ url
-		make_api_request url
+		#make_api_request url
+
+		{status: "work in Progress for recap"}
 	end
 
 	def get_preview_of_game(gameId = "1677896")
@@ -57,6 +59,14 @@ class MLBNews
 		paragraphs = response["content"]["paragraphs"]
 		DBHelper._save_news(eventId, timeTaken, date,
 			dateType, imageUrl, headline, paragraphs)
+	end
+
+	def get_headlines_for_sport
+		{status: "work In Progress for headlines.."}
+	end
+
+	def get_recent_stories_for_team
+		{status: "work In Progress for recent stories for team"}
 	end
 
 end

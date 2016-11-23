@@ -59,4 +59,12 @@ class NFLNews
 			dateType, imageUrl, headline, paragraphs)
 	end
 
+	def get_headlines_for_sport
+		{status: "work In Progress for headlines.."}
+	end
+
+	def get_recent_stories_for_team
+		{status: "work In Progress for recent stories for team"}
+	end
+
 end

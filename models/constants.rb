@@ -9,5 +9,11 @@ module Constants
 	NFL_SECRET = "pgvXj9t7a8"
 
 	EPL_API_KEY = "zkx9c26rvcfvhzrpkkumyrz3"
-	EPL_SECRET = "RKBaFt27Gn"	
+	EPL_SECRET = "RKBaFt27Gn"
+
+	ACTION_PREVIEW = "preview"
+	ACTION_RECAP = "recap"
+	ACTION_HEADLINES = "headlines"
+	ACTION_RECENT_STORIES_BY_TEAM = "recent_stories_by_team"
+
 end
