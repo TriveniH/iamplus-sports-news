@@ -17,6 +17,8 @@ class SportsNews
 	 		@gameType = NBANews.new
 	 	when "3" then 
 	 		@gameType = NFLNews.new
+	 	when "4" then 
+	 		@gameType = EPLNews.new
 	 	end
 	 end
 

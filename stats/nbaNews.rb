@@ -19,6 +19,9 @@ class NBANews
 	end
 
 	def get_preview_of_game(gameId = "1674648")
+		if(DBHelper._check_if_exists(gameId))
+			return DBHelper._retrieve_news(gameId)
+		end
 		event_url = "stories/previews/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(Constants::NBA_API_KEY, Constants::NBA_SECRET)
 		puts "URL::"+ url
