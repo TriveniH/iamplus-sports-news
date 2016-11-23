@@ -11,4 +11,5 @@ class SavedGame
   field :paragraphs, type:Array
 
   validates_uniqueness_of :event_id
+  index({ created_at: 1 }, {expire_after_seconds: 86400})
 end
