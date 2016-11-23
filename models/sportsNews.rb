@@ -37,6 +37,15 @@ class SportsNews
 	 end
 
 	 def resolve_action
+	 	if !Utils.is_present?(@status)
+	 		@status = nil
+	 	end
+	 	if !Utils.is_present?(@teamId)
+	 		@teamId = nil
+	 	end
+	 	if !Utils.is_present?(@gameId)
+	 		@gameId = nil
+	 	end
 	 	if @gameId != nil
 	 		if @status == nil || @status != "finished"
 	 			@action = Constants::ACTION_PREVIEW
@@ -45,7 +54,7 @@ class SportsNews
 	 		end
 	 	elsif @teamId != nil
 	 		@action = Constants::ACTION_RECENT_STORIES_BY_TEAM
-	 	elsif @gameId == nil && @teamId == nil
+	 	elsif @teamId != nil && @gameId == nil
 	 		@action = Constants::ACTION_HEADLINES
 	 	end
 	 end

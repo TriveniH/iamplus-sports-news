@@ -22,5 +22,12 @@ module Utils
 		return sig
     end
 
+	def Utils.is_blank? str
+    	str.to_s.strip == ''
+  	end
+
+  	def Utils.is_present? str
+    	! is_blank?( str )
+  	end
    
 end
