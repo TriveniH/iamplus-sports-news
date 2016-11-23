@@ -11,7 +11,6 @@ require 'oauth'
 require 'httparty'
 require 'redis'
 require 'mongoid'
-require 'twitter'
 
 
 # Helper

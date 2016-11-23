@@ -1280,3 +1280,90 @@
 [2016-11-21 18:29:08 +0530 triveni-K55VM (10222)] INFO : Doing deferred dependency-detection before Rack startup
 [2016-11-21 18:29:08 +0530 triveni-K55VM (10222)] INFO : Installing Mongo instrumentation
 [2016-11-21 18:29:08 +0530 triveni-K55VM (10222)] INFO : Installing Redis Instrumentation
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : Reading configuration from config/newrelic.yml (/home/meenal/Documents/iamplus-sports-news)
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : Environment: development
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : No known dispatcher detected.
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : Application: API Server
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] WARN : Agent configured not to send data in this environment.
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : Installing Net instrumentation
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : Installing Sinatra instrumentation
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-23 13:04:13 +0530 meenal-Lenovo-Yoga-500-14IBD (5914)] INFO : Finished instrumentation
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Reading configuration from config/newrelic.yml (/home/meenal/Documents/iamplus-sports-news)
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Environment: development
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : No known dispatcher detected.
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Application: API Server
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] WARN : Agent configured not to send data in this environment.
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Installing Net instrumentation
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Installing Sinatra instrumentation
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-23 13:04:50 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Finished instrumentation
+[2016-11-23 13:04:51 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-23 13:04:51 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Installing Redis Instrumentation
+[2016-11-23 13:04:51 +0530 meenal-Lenovo-Yoga-500-14IBD (5967)] INFO : Installing Mongo instrumentation
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Reading configuration from config/newrelic.yml (/home/meenal/Documents/iamplus-sports-news)
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Environment: development
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : No known dispatcher detected.
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Application: API Server
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] WARN : Agent configured not to send data in this environment.
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Installing Net instrumentation
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Installing Sinatra instrumentation
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Finished instrumentation
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Installing Redis Instrumentation
+[2016-11-23 13:06:48 +0530 meenal-Lenovo-Yoga-500-14IBD (6070)] INFO : Installing Mongo instrumentation
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Reading configuration from config/newrelic.yml (/home/meenal/Documents/iamplus-sports-news)
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Environment: development
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : No known dispatcher detected.
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Application: API Server
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] WARN : Agent configured not to send data in this environment.
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Installing Net instrumentation
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Installing Sinatra instrumentation
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Finished instrumentation
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Installing Redis Instrumentation
+[2016-11-23 13:07:58 +0530 meenal-Lenovo-Yoga-500-14IBD (6136)] INFO : Installing Mongo instrumentation
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Reading configuration from config/newrelic.yml (/home/meenal/Documents/iamplus-sports-news)
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Environment: development
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : No known dispatcher detected.
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Application: API Server
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] WARN : Agent configured not to send data in this environment.
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Installing Net instrumentation
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Installing Sinatra instrumentation
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-23 13:10:02 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Finished instrumentation
+[2016-11-23 13:10:03 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-23 13:10:03 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Installing Redis Instrumentation
+[2016-11-23 13:10:03 +0530 meenal-Lenovo-Yoga-500-14IBD (6243)] INFO : Installing Mongo instrumentation
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Starting the New Relic agent in "development" environment.
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Reading configuration from config/newrelic.yml (/home/meenal/Documents/iamplus-sports-news)
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Environment: development
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : No known dispatcher detected.
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Application: API Server
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] WARN : Agent configured not to send data in this environment.
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Installing Net instrumentation
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Installing Sinatra instrumentation
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-11-23 13:11:15 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Finished instrumentation
+[2016-11-23 13:11:16 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-11-23 13:11:16 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Installing Redis Instrumentation
+[2016-11-23 13:11:16 +0530 meenal-Lenovo-Yoga-500-14IBD (6320)] INFO : Installing Mongo instrumentation

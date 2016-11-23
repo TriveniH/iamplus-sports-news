@@ -13,14 +13,10 @@ class SportsNews
 	 	when "1" then
 	 		puts "initializing mlbObject"
 	 		@gameType = MLBNews.new
-=begin
-	 	when 2 then
-	 		gameType = MLBNews.new
-	 	when 3 then
-	 		gameType = MLBNews.new
-	 	else
-	 		gameType = MLBNews.new
-=end
+	 	when "2" then 
+	 		@gameType = NBANews.new
+	 	when "3" then 
+	 		@gameType = NFLNews.new
 	 	end
 	 end
 

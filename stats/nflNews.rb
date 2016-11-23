@@ -3,33 +3,30 @@ require 'cgi'
 require 'openssl'
 require 'digest'
 
-class MLBNews
+class NFLNews
 	DOMAIN = "http://api.stats.com/"
-	ROUTE = "v1/editorial/baseball/mlb/"
+	ROUTE = "v1/editorial/football/nfl/"
 
 	def initialize
 	end
 
-	def get_recap_of_game1(gameId = "1677896")
+	def get_recap_of_game1(gameId = "1635823")
 		event_url = "stories/recaps/events/"+gameId +"/?"
-		url = ROUTE + event_url + Utils.get_api_key_signature_string(Constants::MLB_API_KEY, Constants::MLB_SECRET)
+		url = ROUTE + event_url + Utils.get_api_key_signature_string(Constants::NFL_API_KEY, Constants::NFL_SECRET)
 		puts "URL::"+ url
 		make_api_request url
 	end
 
-	def get_preview_of_game(gameId = "1677896")
-		if(DBHelper._check_if_exists(gameId))
-			return DBHelper._retrieve_news(gameId)
-		end
+	def get_preview_of_game(gameId = "1635823")
 		event_url = "stories/previews/events/"+gameId +"/?"
-		url = ROUTE + event_url + Utils.get_api_key_signature_string(Constants::MLB_API_KEY, Constants::MLB_SECRET)
+		url = ROUTE + event_url + Utils.get_api_key_signature_string(Constants::NFL_API_KEY, Constants::NFL_SECRET)
 		puts "URL::"+ url
 		response = make_api_request url
 		save_game response.to_json
 		response
 	end
 
-	def get_game_bullets(gameId = "1677896")
+	def get_game_bullets(gameId = "1635823")
 	end
 
 	def make_api_request url
@@ -38,7 +35,7 @@ class MLBNews
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
-			response_back = JsonUtils.process_response(response.body, Constants::MLB_API_KEY, Constants::MLB_SECRET , DOMAIN, ROUTE)
+			response_back = JsonUtils.process_response(response.body, Constants::NFL_API_KEY, Constants::NFL_SECRET , DOMAIN, ROUTE)
 		end
 		response_back
 	end
