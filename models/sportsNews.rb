@@ -23,8 +23,7 @@ class SportsNews
 	 end
 
 	 def get_recap_of_game
-	 	mlbnews = MLBNews.new
-	 	mlbnews.get_recap_of_game1(@gameId)
+	 	@gameType.get_recap_of_game1(@gameId)
 	 end
 
 	 def get_preview_of_game
