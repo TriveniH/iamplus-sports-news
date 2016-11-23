@@ -54,7 +54,7 @@ class SportsNews
 	 		end
 	 	elsif @teamId != nil
 	 		@action = Constants::ACTION_RECENT_STORIES_BY_TEAM
-	 	elsif @teamId != nil && @gameId == nil
+	 	elsif @teamId == nil && @gameId == nil
 	 		@action = Constants::ACTION_HEADLINES
 	 	end
 	 end
