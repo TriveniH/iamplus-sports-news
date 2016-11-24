@@ -14,9 +14,7 @@ class MLBNews
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(Constants::MLB_API_KEY, Constants::MLB_SECRET)
 		puts "URL::"+ url
-		#make_api_request url
-
-		{status: "work in Progress for recap"}
+		make_api_request url
 	end
 
 	def get_preview_of_game(gameId = "1677896")
@@ -48,6 +46,10 @@ class MLBNews
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
+			request_status = Utils.check_response_status response
+			if request_status != nil
+				return request_status
+			end
 			response_back = JsonUtils.process_response(response.body, Constants::MLB_API_KEY, Constants::MLB_SECRET , DOMAIN, ROUTE)
 		end
 		response_back
@@ -59,6 +61,12 @@ class MLBNews
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
+
+			request_status = Utils.check_response_status response
+			if request_status != nil
+				return request_status
+			end
+
 			response_back = JsonUtils.process_response_for_headlines(response.body, Constants::MLB_API_KEY, Constants::MLB_SECRET , DOMAIN, ROUTE)
 		end
 		response_back
@@ -68,6 +76,9 @@ class MLBNews
 		puts responseJson.to_s
 		response = JSON.parse(responseJson)
 		eventId = response["eventId"]
+		if eventId == nil
+			return
+		end
 		timeTaken = response["time_taken"]
 		date = response["date"]
 		dateType = response["date_type"]

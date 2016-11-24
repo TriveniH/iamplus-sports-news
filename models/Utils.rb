@@ -30,4 +30,19 @@ module Utils
     	! is_blank?( str )
   	end
    
+   	def Utils.check_response_status response
+		puts response.code
+		case response.code
+		when 200
+			puts "all good"
+			return nil
+		when 403
+			puts "forbidden"
+			return {stat_error_code: 403,
+					stat_status: "not authorized"}
+		else
+			puts "something went wrong"
+			return nil
+		end
+	end
 end

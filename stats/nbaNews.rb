@@ -47,6 +47,12 @@ class NBANews
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
+
+			request_status = Utils.check_response_status response
+			if request_status != nil
+				return request_status
+			end
+
 			response_back = JsonUtils.process_response(response.body, Constants::NBA_API_KEY, Constants::NBA_SECRET , DOMAIN, ROUTE)
 		end
 		response_back
@@ -58,6 +64,12 @@ class NBANews
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
+
+			request_status = Utils.check_response_status response
+			if request_status != nil
+				return request_status
+			end
+
 			response_back = JsonUtils.process_response_for_headlines(response.body, Constants::NBA_API_KEY, Constants::NBA_SECRET , DOMAIN, ROUTE)
 		end
 		response_back
