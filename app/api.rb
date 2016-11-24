@@ -19,7 +19,7 @@ get '/sports_news' do
     return error_response.to_json
   end
 
-  return response.to_json
+  return response
 end
 
 def check_for_sport_Id
