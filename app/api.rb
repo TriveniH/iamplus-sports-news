@@ -4,6 +4,10 @@ before do
   content_type 'application/json'
 end
 
+get '/' do
+  {status: "WELCOME TO SPORTS-NEWS!!!!"}.to_json
+end
+
 get '/sports_news' do
   puts params.to_s
   error_status = check_for_sport_Id
