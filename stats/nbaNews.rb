@@ -33,6 +33,14 @@ class NBANews
 	def get_game_bullets(gameId = "1674648")
 	end
 
+	def get_headlines_for_sport
+		event_url = "stories/headlines/?"
+		url = ROUTE + event_url + Utils.get_api_key_signature_string(Constants::NBA_API_KEY, Constants::NBA_SECRET)
+		puts "URL for heading::"+ url
+		response = make_api_request_for_headlines url
+		response
+	end
+
 	def make_api_request url
 		response_back = nil
 		api_request_time = Benchmark.realtime do
@@ -40,6 +48,17 @@ class NBANews
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
 			response_back = JsonUtils.process_response(response.body, Constants::NBA_API_KEY, Constants::NBA_SECRET , DOMAIN, ROUTE)
+		end
+		response_back
+	end
+
+	def make_api_request_for_headlines url
+		response_back = nil
+		api_request_time = Benchmark.realtime do
+			request = APIRequest.new( :generic, DOMAIN )
+			puts "url::"+ url.to_s
+			response = request.for( :get, url, '')
+			response_back = JsonUtils.process_response_for_headlines(response.body, Constants::NBA_API_KEY, Constants::NBA_SECRET , DOMAIN, ROUTE)
 		end
 		response_back
 	end
@@ -58,10 +77,6 @@ class NBANews
 		paragraphs = response["content"]["paragraphs"]
 		DBHelper._save_news(eventId, timeTaken, date,
 			dateType, imageUrl, headline, paragraphs)
-	end
-
-	def get_headlines_for_sport
-		{status: "work In Progress for headlines.."}
 	end
 
 	def get_recent_stories_for_team
