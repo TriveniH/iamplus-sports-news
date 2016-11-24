@@ -1,8 +1,8 @@
 class SportsNews
 	def initialize params
-    @gameId = params[:game_id].to_s
-    @sportId = params[:sport_id].to_s
-    @status = params[:game_status].to_s
+    @gameId = params[:event_id].to_s
+    @sportId = params[:sport].to_s
+    @status = params[:event_status_id].to_s
     @teamId = params[:team_id].to_s
     resolve_endpoints
   	end
@@ -10,20 +10,20 @@ class SportsNews
 	 def resolve_endpoints
 	 	@gameType = nil
 	 	case @sportId
-	 	when "1" then
-	 		puts "initializing mlbObject"
+	 	when "MLB" then
 	 		@gameType = MLBNews.new
-	 	when "2" then 
+	 	when "NBA" then 
 	 		@gameType = NBANews.new
-	 	when "3" then 
+	 	when "NFL" then 
 	 		@gameType = NFLNews.new
-	 	when "4" then 
+	 	when "EPL" then 
 	 		@gameType = EPLNews.new
 	 	end
 	 	resolve_action
 	 end
 
 	 def get_data
+	 	puts "action: "+ @action.to_s
 	 	case @action
 	 	when Constants::ACTION_PREVIEW then
 	 		@gameType.get_preview_of_game(@gameId)
@@ -47,7 +47,7 @@ class SportsNews
 	 		@gameId = nil
 	 	end
 	 	if @gameId != nil
-	 		if @status == nil || @status != "finished"
+	 		if @status == nil || @status != "4"
 	 			@action = Constants::ACTION_PREVIEW
 	 		else
 	 			@action = Constants::ACTION_RECAP

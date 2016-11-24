@@ -16,10 +16,10 @@ get '/sports_news' do
 end
 
 def check_for_sport_Id
-  sportId = params[:sport_id]
+  sportId = params[:sport]
   if sportId == nil || sportId.to_s.strip == ''
     status "400"
-    return {status: "missing sport Id"}
+    return {status: "missing sport Name"}
   end
   return nil
 end
