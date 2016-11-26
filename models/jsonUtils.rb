@@ -57,7 +57,6 @@ def JsonUtils.process_response(response, api_key, secret, domain, route)
 		date = nil
 		dateType = nil
 		headlineObjects = []
-		#imageUrl = nil
 		headlineText = nil
 		results.each do | result|
 			headlinePackage = result["league"]["headlinePackage"]

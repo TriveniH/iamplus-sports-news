@@ -32,21 +32,37 @@ module Utils
    
    	def Utils.check_response_status response
 		puts response.code
+		stat_status = nil
 		case response.code
 		when 200
 			puts "all good"
 			return nil
 		when 403
 			puts "forbidden"
-			return {stat_error_code: 403,
+			stat_status = {stat_error_code: 403,
 					stat_status: "not authorized"}
+			stat_status = "not authorized"
 		when 404
 			puts "data not found"
-			return {stat_error_code: 404,
-					stat_status: "Data not found"}
+			stat_status = {stat_error_code: 404,
+							stat_status: "Data not found"}
 		else
+			stat_status = {stat_error_code: response.code,
+							stat_status: "Couldn't fetch data"}
 			puts "something went wrong"
 			return nil
 		end
+		content = {paragraphs: ["Data not found"]}
+		{
+			status: response.code,
+			stat_status: stat_status,
+			timeTaken: nil,
+			date: nil,
+			dateType: nil,
+			eventId: nil,
+			imageUrl: nil,
+			headline: nil,
+			content: content
+		}
 	end
 end
