@@ -48,6 +48,10 @@ class EPLNews
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
+			request_status = Utils.check_response_status response
+			if request_status != nil
+				return request_status
+			end
 			response_back = JsonUtils.process_response(response.body, ENV['EPL_API_KEY'], ENV['EPL_SECRET'] , DOMAIN, ROUTE)
 		end
 		response_back
@@ -59,6 +63,10 @@ class EPLNews
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
+			request_status = Utils.check_response_status response
+			if request_status != nil
+				return request_status
+			end
 			response_back = JsonUtils.process_response_for_headlines(response.body, ENV['EPL_API_KEY'], ENV['EPL_SECRET'] , DOMAIN, ROUTE)
 		end
 		response_back
@@ -68,6 +76,10 @@ class EPLNews
 		puts responseJson.to_s
 		response = JSON.parse(responseJson)
 		eventId = response["eventId"]
+		if eventId == nil
+			return
+		end
+
 		timeTaken = response["time_taken"]
 		date = response["date"]
 		dateType = response["date_type"]

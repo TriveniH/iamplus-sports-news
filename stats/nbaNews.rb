@@ -79,6 +79,9 @@ class NBANews
 		puts responseJson.to_s
 		response = JSON.parse(responseJson)
 		eventId = response["eventId"]
+		if eventId == nil
+			return
+		end
 		timeTaken = response["time_taken"]
 		date = response["date"]
 		dateType = response["date_type"]

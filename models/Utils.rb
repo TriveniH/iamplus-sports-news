@@ -40,6 +40,10 @@ module Utils
 			puts "forbidden"
 			return {stat_error_code: 403,
 					stat_status: "not authorized"}
+		when 404
+			puts "data not found"
+			return {stat_error_code: 404,
+					stat_status: "Data not found"}
 		else
 			puts "something went wrong"
 			return nil
