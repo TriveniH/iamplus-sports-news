@@ -76,7 +76,8 @@ class EPLNews
 		puts responseJson.to_s
 		response = JSON.parse(responseJson)
 		eventId = response["eventId"]
-		if eventId == nil
+		content = response["content"]
+		if eventId == nil || content == nil
 			return
 		end
 
@@ -89,7 +90,7 @@ class EPLNews
 		puts "response[:content]::"+ response["content"]["paragraphs"].to_s
 		paragraphs = response["content"]["paragraphs"]
 		DBHelper._save_news(eventId, timeTaken, date,
-			dateType, imageUrl, headline, paragraphs)
+			dateType, imageUrl, headline, paragraphs, "EPL")
 	end
 
 	def get_recent_stories_for_team

@@ -37,12 +37,16 @@ end
 
 def set_status response
   parsedResponse = JSON.parse(response)
-  errorCode = parsedResponse['stat_error_code']
-  error_status = parsedResponse['stat_status']
+  statStatus = parsedResponse['stat_status']
+  if statStatus == nil
+    return nil
+  end
+
+  errorCode = statStatus['stat_error_code']
+  error_status = statStatus['stat_message']
+
   if errorCode != nil
     status errorCode
-    return {status: errorCode,
-            stat_status: error_status}
   end
   return nil
 end

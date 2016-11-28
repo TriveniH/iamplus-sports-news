@@ -12,10 +12,19 @@ class NBANews
 	end
 
 	def get_recap_of_game1(gameId = "1674648")
+
+		if(DBHelper._check_if_exists(gameId))
+			return DBHelper._retrieve_news(gameId)
+		end
+		#for time being until recap is authorised.
+		return DBHelper._return_dummy_data_for_league "NBA"
+=begin
+
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NBA_API_KEY'], ENV['NBA_SECRET'])
 		puts "URL::"+ url
 		make_api_request url
+=end
 	end
 
 	def get_preview_of_game(gameId = "1674648")
@@ -79,7 +88,8 @@ class NBANews
 		puts responseJson.to_s
 		response = JSON.parse(responseJson)
 		eventId = response["eventId"]
-		if eventId == nil
+		content = response["content"]
+		if eventId == nil || content == nil
 			return
 		end
 		timeTaken = response["time_taken"]
@@ -91,7 +101,7 @@ class NBANews
 		puts "response[:content]::"+ response["content"]["paragraphs"].to_s
 		paragraphs = response["content"]["paragraphs"]
 		DBHelper._save_news(eventId, timeTaken, date,
-			dateType, imageUrl, headline, paragraphs)
+			dateType, imageUrl, headline, paragraphs, "NBA")
 	end
 
 	def get_recent_stories_for_team

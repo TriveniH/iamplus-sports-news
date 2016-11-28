@@ -40,15 +40,15 @@ module Utils
 		when 403
 			puts "forbidden"
 			stat_status = {stat_error_code: 403,
-					stat_status: "not authorized"}
+					stat_message: "not authorized"}
 			stat_status = "not authorized"
 		when 404
 			puts "data not found"
 			stat_status = {stat_error_code: 404,
-							stat_status: "Data not found"}
+							stat_message: "Data not found"}
 		else
 			stat_status = {stat_error_code: response.code,
-							stat_status: "Couldn't fetch data"}
+							stat_message: "Couldn't fetch data"}
 			puts "something went wrong"
 			return nil
 		end
