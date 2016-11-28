@@ -34,6 +34,7 @@ module DBHelper
 			saved_game_json = create_json_from_db game
 			return saved_game_json
 		end
+		return nil
 	end
 
 	def DBHelper.create_json_from_db savedGame

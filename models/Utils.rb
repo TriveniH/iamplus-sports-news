@@ -41,7 +41,6 @@ module Utils
 			puts "forbidden"
 			stat_status = {stat_error_code: 403,
 					stat_message: "not authorized"}
-			stat_status = "not authorized"
 		when 404
 			puts "data not found"
 			stat_status = {stat_error_code: 404,

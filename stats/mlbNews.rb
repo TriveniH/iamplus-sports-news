@@ -14,15 +14,16 @@ class MLBNews
 		if(DBHelper._check_if_exists(gameId))
 			return DBHelper._retrieve_news(gameId)
 		end
-		#for time being until recap is authorised.
-		return DBHelper._return_dummy_data_for_league "MLB"
+		dummyData = DBHelper._return_dummy_data_for_league "MLB"
+		if dummyData !=nil
+			#for time being until recap is authorised.
+			return dummyData
+		end
 
-=begin
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['MLB_API_KEY'], ENV['MLB_SECRET'])
 		puts "URL::"+ url
 		make_api_request url
-=end
 	end
 
 	def get_preview_of_game(gameId = "1677896")
