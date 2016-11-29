@@ -63,6 +63,7 @@ class EPLNews
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
+			puts "response"
 			request_status = Utils.check_response_status response
 			if request_status != nil
 				return request_status

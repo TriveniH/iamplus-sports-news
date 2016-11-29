@@ -1,7 +1,5 @@
-require 'base64'
-require 'cgi'
-require 'openssl'
 require 'digest'
+require 'securerandom'
 
 module Utils
 
@@ -12,6 +10,9 @@ module Utils
 	end
 
     def Utils.generateSignature(api_key, secret)
+    	random = SecureRandom.random_number(5)
+    	puts random.to_s
+    	sleep random
     	timeFromEpoch = Time.now.to_i
 		timeFromEpochString = timeFromEpoch.to_s
 		puts "timestamp:"+ timeFromEpochString
