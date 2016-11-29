@@ -10,9 +10,15 @@ module Utils
 	end
 
     def Utils.generateSignature(api_key, secret)
-    	random = SecureRandom.random_number(5)
-    	puts random.to_s
-    	sleep random
+    	random = SecureRandom.random_number(1000)
+    	puts "randomNumber: "+ random.to_s
+    	random_string = random.to_s
+    	random_string = "0."+random_string
+    	randomStringFloat = random_string.to_f
+    	puts "sleeping for seconds:"+ randomStringFloat.to_s
+    	
+    	sleep randomStringFloat
+
     	timeFromEpoch = Time.now.to_i
 		timeFromEpochString = timeFromEpoch.to_s
 		puts "timestamp:"+ timeFromEpochString
