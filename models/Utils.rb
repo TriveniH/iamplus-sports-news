@@ -72,4 +72,17 @@ module Utils
 			content: content
 		}
 	end
+
+	def Utils.check_for_forbidden_error error_response
+		puts error_response.to_s
+		#parsedResponse = JSON.parse(error_response)
+		status = error_response[:status]
+
+		puts status.to_s
+		if status == 403
+			puts "forbidden"
+			return true
+		end
+		return false
+	end
 end

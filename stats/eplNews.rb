@@ -14,8 +14,9 @@ class EPLNews
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request url
-		save_game response.to_json
+		response = make_api_request(url, event_url)
+		#save_game response.to_json
+		puts "response::"+ response.to_s
 		response
 	end
 
@@ -26,8 +27,9 @@ class EPLNews
 		event_url = "stories/previews/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request url
-		save_game response.to_json
+		response = make_api_request(url, event_url)
+		#save_game response.to_json
+		puts "response::"+ response.to_s
 		response
 	end
 
@@ -38,19 +40,26 @@ class EPLNews
 		event_url = "stories/headlines/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
 		puts "URL for heading::"+ url
-		response = make_api_request_for_headlines url
+		response = make_api_request_for_headlines(url, event_url)
+		puts "response::"+ response.to_s
 		response
 	end
 
-	def make_api_request url
+	def make_api_request(url, event_url)
 		response_back = nil
+		reRequestCounter = 0
 		api_request_time = Benchmark.realtime do
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
 			request_status = Utils.check_response_status response
 			if request_status != nil
-				return request_status
+				if (Utils.check_for_forbidden_error(request_status) && reRequestCounter <=1)
+					reRequestCounter = reRequestCounter +1
+					reRequest event_url
+				else
+					return request_status
+				end
 			end
 			response_back = JsonUtils.process_response(response.body, ENV['EPL_API_KEY'], ENV['EPL_SECRET'] , DOMAIN, ROUTE)
 		end
@@ -98,4 +107,9 @@ class EPLNews
 		{status: "work In Progress for recent stories for team"}
 	end
 
+	def reRequest event_url
+		puts "making reRequest"
+		url = ROUTE + event_url +Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
+		make_api_request(url, event_url)
+	end
 end
