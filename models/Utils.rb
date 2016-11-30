@@ -3,27 +3,28 @@ require 'securerandom'
 
 module Utils
 
-    def Utils.get_api_key_signature_string(api_key, secret)
+    def Utils.get_api_key_signature_string(api_key, secret, eventId)
 		apiKey = "api_key="+ api_key
-		sig_string = "&sig="+ Utils.generateSignature(api_key, secret)
+		sig_string = "&sig="+ Utils.generateSignature(api_key, secret, eventId)
 		return apiKey+sig_string
 	end
 
-    def Utils.generateSignature(api_key, secret)
-    	random = SecureRandom.random_number(1000)
-    	puts "randomNumber: "+ random.to_s
-    	random_string = random.to_s
-    	random_string = "0."+random_string
-    	randomStringFloat = random_string.to_f
-    	puts "sleeping for seconds:"+ randomStringFloat.to_s
-    	
-    	sleep randomStringFloat
+    def Utils.generateSignature(api_key, secret, eventId)
+    	if eventId == nil
+    		eventId=""
+    	end
+    	if @mutex == nil
+    		@mutex = Mutex.new
+    	end
+    	@mutex.synchronize {
+    		# access shared resource
+    		timeFromEpoch = Time.now.to_i
+    		timeFromEpoch = timeFromEpoch
+			@timeFromEpochString = timeFromEpoch.to_s
+			puts "timestamp:"+ @timeFromEpochString + " for eventId::"+ eventId.to_s
+  		}
 
-    	timeFromEpoch = Time.now.to_i
-		timeFromEpochString = timeFromEpoch.to_s
-		puts "timestamp:"+ timeFromEpochString
-
-		data = api_key + secret + timeFromEpochString
+		data = api_key + secret + @timeFromEpochString
 		sig = Digest::SHA256.hexdigest data
 
 		return sig

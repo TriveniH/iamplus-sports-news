@@ -22,7 +22,7 @@ class NFLNews
 		end
 
 		event_url = "stories/recaps/events/"+gameId +"/?"
-		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'])
+		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], gameId)
 		puts "URL::"+ url
 		make_api_request url
 	end
@@ -32,7 +32,7 @@ class NFLNews
 			return DBHelper._retrieve_news(gameId)
 		end
 		event_url = "stories/previews/events/"+gameId +"/?"
-		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'])
+		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], gameId)
 		puts "URL::"+ url
 		response = make_api_request url
 		save_game response.to_json
@@ -44,7 +44,7 @@ class NFLNews
 
 	def get_headlines_for_sport
 		event_url = "stories/headlines/?"
-		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'])
+		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], nil)
 		puts "URL for heading::"+ url
 		response = make_api_request_for_headlines url
 		response
