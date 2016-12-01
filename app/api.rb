@@ -9,6 +9,8 @@ get '/' do
 end
 
 get '/sports_news' do
+  eventIds = params[:event_ids]
+  puts "eventIds::"+ eventIds.to_s
   puts params.to_s
   error_status = check_for_sport_Id
   if error_status != nil

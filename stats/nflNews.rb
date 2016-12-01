@@ -10,27 +10,29 @@ class NFLNews
 	def initialize
 	end
 
-	def get_recap_of_game1(gameId = "1635823")
+	def get_recap_of_game(gameId = "1635823")
 
-		if(DBHelper._check_if_exists(gameId))
-			return DBHelper._retrieve_news(gameId)
+		if(DBHelperRecap._check_if_exists(gameId))
+			return DBHelperRecap._retrieve_recap(gameId)
 		end
 
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], gameId)
 		puts "URL::"+ url
-		make_api_request url
+		response = make_api_request url
+		save_game(response.to_json, true)
+		response
 	end
 
 	def get_preview_of_game(gameId = "1635823")
-		if(DBHelper._check_if_exists(gameId))
-			return DBHelper._retrieve_news(gameId)
+		if(DBHelperPreview._check_if_exists(gameId))
+			return DBHelperPreview._retrieve_preview(gameId)
 		end
 		event_url = "stories/previews/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], gameId)
 		puts "URL::"+ url
 		response = make_api_request url
-		save_game response.to_json
+		save_game(response.to_json, false)
 		response
 	end
 
@@ -79,7 +81,7 @@ class NFLNews
 		response_back
 	end
 
-	def save_game responseJson
+	def save_game(responseJson, isRecap)
 		puts responseJson.to_s
 		response = JSON.parse(responseJson)
 		eventId = response["eventId"]
@@ -88,7 +90,6 @@ class NFLNews
 			return
 		end
 
-		timeTaken = response["time_taken"]
 		date = response["date"]
 		dateType = response["date_type"]
 		imageUrl = response["image_url"]
@@ -96,8 +97,13 @@ class NFLNews
 		puts "headline:: "+ headline.to_s
 		puts "response[:content]::"+ response["content"]["paragraphs"].to_s
 		paragraphs = response["content"]["paragraphs"]
-		DBHelper._save_news(eventId, timeTaken, date,
-			dateType, imageUrl, headline, paragraphs, "NFL")
+		if isRecap
+			DBHelperRecap._save_recap(eventId, date,
+				dateType, imageUrl, headline, paragraphs, "NFL")
+		else
+			DBHelperPreview._save_preview(eventId, date,
+				dateType, imageUrl, headline, paragraphs, "NFL")
+		end
 	end
 
 	def get_recent_stories_for_team

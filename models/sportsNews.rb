@@ -28,7 +28,7 @@ class SportsNews
 	 	when Constants::ACTION_PREVIEW then
 	 		@gameType.get_preview_of_game(@gameId)
 	 	when Constants::ACTION_RECAP then
-	 		@gameType.get_recap_of_game1(@gameId)
+	 		@gameType.get_recap_of_game(@gameId)
 	 	when Constants::ACTION_HEADLINES then
 	 		@gameType.get_headlines_for_sport
 	 	when Constants::ACTION_RECENT_STORIES_BY_TEAM then

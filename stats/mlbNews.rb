@@ -10,11 +10,11 @@ class MLBNews
 	def initialize
 	end
 
-	def get_recap_of_game1(gameId = "1677896")
-		if(DBHelper._check_if_exists(gameId))
-			return DBHelper._retrieve_news(gameId)
+	def get_recap_of_game(gameId = "1677896")
+		if(DBHelperRecap._check_if_exists(gameId))
+			return DBHelperRecap._retrieve_recap(gameId)
 		end
-		dummyData = DBHelper._return_dummy_data_for_league "MLB"
+		dummyData = DBHelperPreview._return_dummy_data_for_league "MLB"
 		if dummyData !=nil
 			#for time being until recap is authorised.
 			return dummyData
@@ -23,18 +23,20 @@ class MLBNews
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['MLB_API_KEY'], ENV['MLB_SECRET'], gameId)
 		puts "URL::"+ url
-		make_api_request url
+		response = make_api_request url
+		save_game(response.to_json, true)
+		response
 	end
 
 	def get_preview_of_game(gameId = "1677896")
-		if(DBHelper._check_if_exists(gameId))
-			return DBHelper._retrieve_news(gameId)
+		if(DBHelperPreview._check_if_exists(gameId))
+			return DBHelperPreview._retrieve_preview(gameId)
 		end
 		event_url = "stories/previews/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['MLB_API_KEY'], ENV['MLB_SECRET'], gameId)
 		puts "URL::"+ url
 		response = make_api_request url
-		save_game response.to_json
+		save_game(response.to_json, false)
 		response
 	end
 
@@ -81,7 +83,7 @@ class MLBNews
 		response_back
 	end
 
-	def save_game responseJson
+	def save_game(responseJson, isRecap)
 		puts responseJson.to_s
 		response = JSON.parse(responseJson)
 		eventId = response["eventId"]
@@ -89,7 +91,6 @@ class MLBNews
 		if eventId == nil || content == nil
 			return
 		end
-		timeTaken = response["time_taken"]
 		date = response["date"]
 		dateType = response["date_type"]
 		imageUrl = response["image_url"]
@@ -97,8 +98,13 @@ class MLBNews
 		puts "headline:: "+ headline.to_s
 		puts "response[:content]::"+ response["content"]["paragraphs"].to_s
 		paragraphs = response["content"]["paragraphs"]
-		DBHelper._save_news(eventId, timeTaken, date,
-			dateType, imageUrl, headline, paragraphs, "MLB")
+		if isRecap
+			DBHelperRecap._save_recap(eventId, date,
+				dateType, imageUrl, headline, paragraphs, "MLB")
+		else
+			DBHelperPreview._save_preview(eventId, date,
+				dateType, imageUrl, headline, paragraphs, "MLB")
+		end
 	end
 
 	def get_recent_stories_for_team

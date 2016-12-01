@@ -42,7 +42,7 @@ def JsonUtils.process_response(response, api_key, secret, domain, route)
 
 	def JsonUtils.getImageUrl(imageId, api_key, secret, domain, route)
 		event_url = "images/p128/"+imageId+"/?"
-		sig = Utils.get_api_key_signature_string(api_key, secret)
+		sig = Utils.get_api_key_signature_string(api_key, secret, nil)
 		imageUrl = domain + route + event_url + sig
 		puts "imageUrl:: "+ imageUrl
 		return imageUrl

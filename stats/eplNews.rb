@@ -10,25 +10,28 @@ class EPLNews
 	def initialize
 	end
 
-	def get_recap_of_game1(gameId = "1643062")
+	def get_recap_of_game(gameId = "1643062")
+		if(DBHelperRecap._check_if_exists(gameId))
+			return DBHelperRecap._retrieve_recap(gameId)
+		end
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request(url, event_url)
-		#save_game response.to_json
+		response = make_api_request(url)
+		save_game(response.to_json, true)
 		puts "response::"+ response.to_s
 		response
 	end
 
 	def get_preview_of_game(gameId = "1643062")
-		if(DBHelper._check_if_exists(gameId))
-			return DBHelper._retrieve_news(gameId)
+		if(DBHelperPreview._check_if_exists(gameId))
+			return DBHelperPreview._retrieve_preview(gameId)
 		end
 		event_url = "stories/previews/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request(url, event_url)
-		#save_game response.to_json
+		response = make_api_request(url)
+		save_game(response.to_json, false)
 		puts "response::"+ response.to_s
 		response
 	end
@@ -40,26 +43,20 @@ class EPLNews
 		event_url = "stories/headlines/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
 		puts "URL for heading::"+ url
-		response = make_api_request_for_headlines(url, event_url)
+		response = make_api_request_for_headlines(url)
 		puts "response::"+ response.to_s
 		response
 	end
 
-	def make_api_request(url, event_url)
+	def make_api_request(url)
 		response_back = nil
-		reRequestCounter = 0
 		api_request_time = Benchmark.realtime do
 			request = APIRequest.new( :generic, DOMAIN )
 			puts "url::"+ url.to_s
 			response = request.for( :get, url, '')
 			request_status = Utils.check_response_status response
 			if request_status != nil
-				if (Utils.check_for_forbidden_error(request_status) && reRequestCounter <=1)
-					reRequestCounter = reRequestCounter +1
-					reRequest event_url
-				else
-					return request_status
-				end
+				return request_status
 			end
 			response_back = JsonUtils.process_response(response.body, ENV['EPL_API_KEY'], ENV['EPL_SECRET'] , DOMAIN, ROUTE)
 		end
@@ -82,7 +79,7 @@ class EPLNews
 		response_back
 	end
 
-	def save_game responseJson
+	def save_game(responseJson, isRecap)
 		puts responseJson.to_s
 		response = JSON.parse(responseJson)
 		eventId = response["eventId"]
@@ -91,7 +88,6 @@ class EPLNews
 			return
 		end
 
-		timeTaken = response["time_taken"]
 		date = response["date"]
 		dateType = response["date_type"]
 		imageUrl = response["image_url"]
@@ -99,8 +95,13 @@ class EPLNews
 		puts "headline:: "+ headline.to_s
 		puts "response[:content]::"+ response["content"]["paragraphs"].to_s
 		paragraphs = response["content"]["paragraphs"]
-		DBHelper._save_news(eventId, timeTaken, date,
-			dateType, imageUrl, headline, paragraphs, "EPL")
+		if isRecap
+			DBHelperRecap._save_recap(eventId, date,
+				dateType, imageUrl, headline, paragraphs, "EPL")
+		else
+			DBHelperPreview._save_preview(eventId, date,
+				dateType, imageUrl, headline, paragraphs, "EPL")
+		end
 	end
 
 	def get_recent_stories_for_team
@@ -110,6 +111,6 @@ class EPLNews
 	def reRequest event_url
 		puts "making reRequest"
 		url = ROUTE + event_url +Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
-		make_api_request(url, event_url)
+		make_api_request(url)
 	end
 end

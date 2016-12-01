@@ -1,9 +1,8 @@
-module DBHelper
+module DBHelperRecap
 
-	def DBHelper._save_news(eventId, timeTaken, dateTime, 
+	def DBHelperRecap._save_recap(eventId, dateTime, 
 			dateType, imageUrl, headline, paragraphs, leagueName)
-		SavedGame.create( event_id: eventId,
-						time_taken: timeTaken,
+		SavedGameRecap.create( event_id: eventId,
 						date: dateTime,
 						date_type: dateType,
 						image_url: imageUrl,
@@ -13,9 +12,9 @@ module DBHelper
 				)
 	end
 
-	def DBHelper._retrieve_news eventId
+	def DBHelperRecap._retrieve_recap eventId
 		if _check_if_exists(eventId)
-			SavedGame.find_by(event_id: eventId) do | savedGame|
+			SavedGameRecap.find_by(event_id: eventId) do | savedGame|
 				saved_game_json = create_json_from_db savedGame
 				return saved_game_json
 			end
@@ -25,20 +24,19 @@ module DBHelper
 		end
 	end
 
-	def DBHelper._check_if_exists(eventId)
-		return SavedGame.where(event_id: eventId).exists?
+	def DBHelperRecap._check_if_exists(eventId)
+		return SavedGameRecap.where(event_id: eventId).exists?
 	end
 
-	def DBHelper._return_dummy_data_for_league(leagueName)
-		SavedGame.find_by(league_name: leagueName) do | game |
+	def DBHelperRecap._return_dummy_data_for_league(leagueName)
+		SavedGameRecap.find_by(league_name: leagueName) do | game |
 			saved_game_json = create_json_from_db game
 			return saved_game_json
 		end
 		return nil
 	end
 
-	def DBHelper.create_json_from_db savedGame
-		timeTaken = savedGame[:time_taken]
+	def DBHelperRecap.create_json_from_db savedGame
 		date = savedGame[:date]
 		dateType = savedGame[:date_type]
 		eventId = savedGame[:event_id]
@@ -48,7 +46,6 @@ module DBHelper
 		content = {paragraphs: paragraphs}
 		saved_game_json = {
 			status: "OK",
-			timeTaken: timeTaken,
 			date: date,
 			dateType: dateType,
 			eventId: eventId,
