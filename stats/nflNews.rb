@@ -15,11 +15,6 @@ class NFLNews
 		if(DBHelper._check_if_exists(gameId))
 			return DBHelper._retrieve_news(gameId)
 		end
-		dummyData = DBHelper._return_dummy_data_for_league "NFL"
-		if dummyData !=nil
-			#for time being until recap is authorised.
-			return dummyData
-		end
 
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], gameId)
