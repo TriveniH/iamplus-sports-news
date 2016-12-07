@@ -11,9 +11,9 @@ def JsonUtils.process_response_action_based(response, api_key, secret, domain, r
 	 			response_back = process_response(response, api_key, secret, domain, route)
 	 		when Constants::ACTION_HEADLINES then
 	 			puts "response::---------"+ response.to_s
-	 			response_back = process_response_for_headlines(response, api_key, secret, domain, route)
+	 			response_back = process_response_for_headlines(response, api_key, secret, domain, route, action)
 	 		when Constants::ACTION_RECENT_STORIES_BY_TEAM then
-	 			response_back = process_response_for_headlines(response, api_key, secret, domain, route)
+	 			response_back = process_response_for_headlines(response, api_key, secret, domain, route, action)
 	 	end
 	 	response_back
 end
@@ -82,7 +82,7 @@ def JsonUtils.process_response(response, api_key, secret, domain, route)
 		return imageUrl
 	end
 
-	def JsonUtils.process_response_for_headlines(response, api_key, secret, domain, route)
+	def JsonUtils.process_response_for_headlines(response, api_key, secret, domain, route, action)
 		puts "response::"+ response.to_s
 		parsedJson = JSON.parse(response)
 		status = parsedJson["status"]
@@ -91,9 +91,12 @@ def JsonUtils.process_response(response, api_key, secret, domain, route)
 		date = nil
 		dateType = nil
 		headlineObjects = []
+
 		headlineText = nil
+		puts "results::"+ results.to_s
+		puts "results::"+ results.length.to_s
 		results.each do | result|
-			headlinePackage = result["league"]["headlinePackage"]
+			headlinePackage = resolveHeadlinePackage(result["league"], action)
 			date = headlinePackage["publishDate"]["full"]
 			dateType = headlinePackage["publishDate"]["dateType"]
 			headlines = headlinePackage["headlines"]
@@ -141,5 +144,15 @@ class HeadLine
 	end
 end
 
+def JsonUtils.resolveHeadlinePackage(league, action)
+	headlinePackage = nil
+	case action
+	when Constants::ACTION_RECENT_STORIES_BY_TEAM then
+		headlinePackage = league["team"]["headlinePackage"]
+	else
+		headlinePackage = league["headlinePackage"]	
+	end
+	headlinePackage
+end
 
 end

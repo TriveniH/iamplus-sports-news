@@ -32,7 +32,7 @@ class SportsNews
 	 	when Constants::ACTION_HEADLINES then
 	 		@gameType.get_headlines_for_sport
 	 	when Constants::ACTION_RECENT_STORIES_BY_TEAM then
-	 		@gameType.get_recent_stories_for_team
+	 		@gameType.get_recent_stories_for_team @teamId
 	 	end
 	 end
 

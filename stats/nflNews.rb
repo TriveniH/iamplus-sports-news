@@ -109,8 +109,12 @@ class NFLNews
 		end
 	end
 
-	def get_recent_stories_for_team
-		get_headlines_for_sport
+	def get_recent_stories_for_team team_id
+		event_url = "stories/recent/teams/"+ team_id +"/?"
+		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], nil)
+		puts "URL for heading::"+ url
+		response = make_api_request_generic url
+		response
 	end
 
 	def make_api_request_generic(url)

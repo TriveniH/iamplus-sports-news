@@ -78,14 +78,12 @@ class EPLNews
 		end
 	end
 
-	def get_recent_stories_for_team
-		response = get_headlines_for_sport
-=begin
-		event_url = "stories/recent/teams/"+ team_id +"?"
+	def get_recent_stories_for_team team_id
+		#response = get_headlines_for_sport
+		event_url = "stories/recent/teams/"+ team_id +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
 		puts "URL for heading::"+ url
 		response = make_api_request_generic url
-=end
 		response
 	end
 

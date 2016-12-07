@@ -76,7 +76,7 @@ class MLBNews
 		end
 	end
 
-	def get_recent_stories_for_team
+	def get_recent_stories_for_team team_id
 		get_headlines_for_sport
 	end
 
