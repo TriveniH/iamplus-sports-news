@@ -7,7 +7,8 @@ class EPLNews
 	DOMAIN = "http://api.stats.com/"
 	ROUTE = "v1/editorial/soccer/epl/"
 
-	def initialize
+	def initialize action
+		@action = action
 	end
 
 	def get_recap_of_game(gameId = "1643062")
@@ -17,7 +18,7 @@ class EPLNews
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request(url)
+		response = make_api_request_generic url
 		save_game(response.to_json, true)
 		puts "response::"+ response.to_s
 		response
@@ -30,7 +31,7 @@ class EPLNews
 		event_url = "stories/previews/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request(url)
+		response = make_api_request_generic url
 		save_game(response.to_json, false)
 		puts "response::"+ response.to_s
 		response
@@ -43,40 +44,13 @@ class EPLNews
 		event_url = "stories/headlines/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
 		puts "URL for heading::"+ url
-		response = make_api_request_for_headlines(url)
+		response = make_api_request_generic url
 		puts "response::"+ response.to_s
 		response
 	end
 
-	def make_api_request(url)
-		response_back = nil
-		api_request_time = Benchmark.realtime do
-			request = APIRequest.new( :generic, DOMAIN )
-			puts "url::"+ url.to_s
-			response = request.for( :get, url, '')
-			request_status = Utils.check_response_status response
-			if request_status != nil
-				return request_status
-			end
-			response_back = JsonUtils.process_response(response.body, ENV['EPL_API_KEY'], ENV['EPL_SECRET'] , DOMAIN, ROUTE)
-		end
-		response_back
-	end
-
-	def make_api_request_for_headlines url
-		response_back = nil
-		api_request_time = Benchmark.realtime do
-			request = APIRequest.new( :generic, DOMAIN )
-			puts "url::"+ url.to_s
-			response = request.for( :get, url, '')
-			puts "response"
-			request_status = Utils.check_response_status response
-			if request_status != nil
-				return request_status
-			end
-			response_back = JsonUtils.process_response_for_headlines(response.body, ENV['EPL_API_KEY'], ENV['EPL_SECRET'] , DOMAIN, ROUTE)
-		end
-		response_back
+	def make_api_request_generic(url)
+		JsonUtils.make_api_request_generic(url, @action, ENV['EPL_API_KEY'], ENV['EPL_SECRET'] , DOMAIN, ROUTE)
 	end
 
 	def save_game(responseJson, isRecap)
@@ -105,12 +79,14 @@ class EPLNews
 	end
 
 	def get_recent_stories_for_team
-		{status: "work In Progress for recent stories for team"}
+		response = get_headlines_for_sport
+=begin
+		event_url = "stories/recent/teams/"+ team_id +"?"
+		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
+		puts "URL for heading::"+ url
+		response = make_api_request_generic url
+=end
+		response
 	end
 
-	def reRequest event_url
-		puts "making reRequest"
-		url = ROUTE + event_url +Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
-		make_api_request(url)
-	end
 end

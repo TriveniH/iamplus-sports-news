@@ -8,7 +8,8 @@ class NBANews
 	DOMAIN = "http://api.stats.com/"
 	ROUTE = "v1/editorial/basketball/nba/"
 
-	def initialize
+	def initialize action
+		@action = action
 	end
 
 	def get_recap_of_game(gameId = "1674648")
@@ -19,7 +20,7 @@ class NBANews
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NBA_API_KEY'], ENV['NBA_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request url
+		response = make_api_request_generic url
 		save_game(response.to_json, true)
 		response
 
@@ -32,7 +33,7 @@ class NBANews
 		event_url = "stories/previews/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NBA_API_KEY'], ENV['NBA_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request url
+		response = make_api_request_generic url
 		save_game(response.to_json, false)
 		response
 	end
@@ -44,42 +45,8 @@ class NBANews
 		event_url = "stories/headlines/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NBA_API_KEY'], ENV['NBA_SECRET'], nil)
 		puts "URL for heading::"+ url
-		response = make_api_request_for_headlines url
+		response = make_api_request_generic url
 		response
-	end
-
-	def make_api_request url
-		response_back = nil
-		api_request_time = Benchmark.realtime do
-			request = APIRequest.new( :generic, DOMAIN )
-			puts "url::"+ url.to_s
-			response = request.for( :get, url, '')
-
-			request_status = Utils.check_response_status response
-			if request_status != nil
-				return request_status
-			end
-			
-			response_back = JsonUtils.process_response(response.body, ENV['NBA_API_KEY'], ENV['NBA_SECRET'] , DOMAIN, ROUTE)
-		end
-		response_back
-	end
-
-	def make_api_request_for_headlines url
-		response_back = nil
-		api_request_time = Benchmark.realtime do
-			request = APIRequest.new( :generic, DOMAIN )
-			puts "url::"+ url.to_s
-			response = request.for( :get, url, '')
-
-			request_status = Utils.check_response_status response
-			if request_status != nil
-				return request_status
-			end
-
-			response_back = JsonUtils.process_response_for_headlines(response.body, ENV['NBA_API_KEY'], ENV['NBA_SECRET'] , DOMAIN, ROUTE)
-		end
-		response_back
 	end
 
 	def save_game(responseJson, isRecap)
@@ -108,7 +75,10 @@ class NBANews
 	end
 
 	def get_recent_stories_for_team
-		{status: "work In Progress for recent stories for team"}
+		get_headlines_for_sport
 	end
 
+	def make_api_request_generic(url)
+		JsonUtils.make_api_request_generic(url, @action, ENV['NBA_API_KEY'], ENV['NBA_SECRET'] , DOMAIN, ROUTE)
+	end
 end

@@ -8,18 +8,18 @@ class SportsNews
   	end
 
 	 def resolve_endpoints
+	 	resolve_action
 	 	@gameType = nil
 	 	case @sportId
 	 	when "MLB" then
-	 		@gameType = MLBNews.new
+	 		@gameType = MLBNews.new(@action)
 	 	when "NBA" then 
-	 		@gameType = NBANews.new
+	 		@gameType = NBANews.new(@action)
 	 	when "NFL" then 
-	 		@gameType = NFLNews.new
+	 		@gameType = NFLNews.new(@action)
 	 	when "EPL" then 
-	 		@gameType = EPLNews.new
+	 		@gameType = EPLNews.new(@action)
 	 	end
-	 	resolve_action
 	 end
 
 	 def get_data

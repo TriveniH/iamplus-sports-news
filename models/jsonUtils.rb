@@ -1,5 +1,39 @@
 module JsonUtils
 
+def JsonUtils.process_response_action_based(response, api_key, secret, domain, route, action)
+		puts "action in jsonUtils::"+ action.to_s
+		puts "response before processing:"+ response.to_s
+		response_back = nil
+		case action
+		 	when Constants::ACTION_PREVIEW then
+		 		response_back = process_response(response, api_key, secret, domain, route)
+	 		when Constants::ACTION_RECAP then
+	 			response_back = process_response(response, api_key, secret, domain, route)
+	 		when Constants::ACTION_HEADLINES then
+	 			puts "response::---------"+ response.to_s
+	 			response_back = process_response_for_headlines(response, api_key, secret, domain, route)
+	 		when Constants::ACTION_RECENT_STORIES_BY_TEAM then
+	 			response_back = process_response_for_headlines(response, api_key, secret, domain, route)
+	 	end
+	 	response_back
+end
+
+def JsonUtils.make_api_request_generic(url, action, api_key, secret, domain, route)
+	response_back = nil
+	api_request_time = Benchmark.realtime do
+		request = APIRequest.new( :generic, domain )
+		puts "url::"+ url.to_s
+		response = request.for( :get, url, '')
+		request_status = Utils.check_response_status response
+		if request_status != nil
+			return request_status
+		end
+		puts "response.body::"+ response.body.to_s
+		response_back = process_response_action_based(response.body, api_key, secret, domain, route, action)
+	end
+	return response_back
+end
+
 def JsonUtils.process_response(response, api_key, secret, domain, route)
 		parsedJson = JSON.parse(response)
 		status = parsedJson["status"]

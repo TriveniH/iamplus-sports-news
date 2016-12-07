@@ -7,7 +7,8 @@ class NFLNews
 	DOMAIN = "http://api.stats.com/"
 	ROUTE = "v1/editorial/football/nfl/"
 
-	def initialize
+	def initialize action
+		@action = action
 	end
 
 	def get_recap_of_game(gameId = "1635823")
@@ -19,7 +20,7 @@ class NFLNews
 		event_url = "stories/recaps/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request url
+		response = make_api_request_generic url
 		save_game(response.to_json, true)
 		response
 	end
@@ -31,7 +32,7 @@ class NFLNews
 		event_url = "stories/previews/events/"+gameId +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], gameId)
 		puts "URL::"+ url
-		response = make_api_request url
+		response = make_api_request_generic url
 		save_game(response.to_json, false)
 		response
 	end
@@ -43,9 +44,10 @@ class NFLNews
 		event_url = "stories/headlines/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], nil)
 		puts "URL for heading::"+ url
-		response = make_api_request_for_headlines url
+		response = make_api_request_generic url
 		response
 	end
+=begin
 
 	def make_api_request url
 		response_back = nil
@@ -80,6 +82,7 @@ class NFLNews
 		end
 		response_back
 	end
+=end
 
 	def save_game(responseJson, isRecap)
 		puts responseJson.to_s
@@ -107,7 +110,10 @@ class NFLNews
 	end
 
 	def get_recent_stories_for_team
-		{status: "work In Progress for recent stories for team"}
+		get_headlines_for_sport
 	end
 
+	def make_api_request_generic(url)
+		JsonUtils.make_api_request_generic(url, @action, ENV['NFL_API_KEY'], ENV['NFL_SECRET'] , DOMAIN, ROUTE)
+	end
 end
