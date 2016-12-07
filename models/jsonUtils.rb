@@ -140,4 +140,6 @@ class HeadLine
 		@imageUrl = imageUrl
 	end
 end
+
+
 end
