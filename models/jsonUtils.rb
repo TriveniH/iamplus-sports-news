@@ -2,7 +2,7 @@ module JsonUtils
 
 def JsonUtils.process_response_action_based(response, api_key, secret, domain, route, action)
 		puts "action in jsonUtils::"+ action.to_s
-		puts "response before processing:"+ response.to_s
+		#puts "response before processing:"+ response.to_s
 		response_back = nil
 		case action
 		 	when Constants::ACTION_PREVIEW then
@@ -10,7 +10,7 @@ def JsonUtils.process_response_action_based(response, api_key, secret, domain, r
 	 		when Constants::ACTION_RECAP then
 	 			response_back = process_response(response, api_key, secret, domain, route)
 	 		when Constants::ACTION_HEADLINES then
-	 			puts "response::---------"+ response.to_s
+	 			#puts "response::---------"+ response.to_s
 	 			response_back = process_response_for_headlines(response, api_key, secret, domain, route, action)
 	 		when Constants::ACTION_RECENT_STORIES_BY_TEAM then
 	 			response_back = process_response_for_headlines(response, api_key, secret, domain, route, action)
@@ -28,7 +28,7 @@ def JsonUtils.make_api_request_generic(url, action, api_key, secret, domain, rou
 		if request_status != nil
 			return request_status
 		end
-		puts "response.body::"+ response.body.to_s
+		#puts "response.body::"+ response.body.to_s
 		response_back = process_response_action_based(response.body, api_key, secret, domain, route, action)
 	end
 	return response_back
@@ -83,7 +83,7 @@ def JsonUtils.process_response(response, api_key, secret, domain, route)
 	end
 
 	def JsonUtils.process_response_for_headlines(response, api_key, secret, domain, route, action)
-		puts "response::"+ response.to_s
+		#puts "response::"+ response.to_s
 		parsedJson = JSON.parse(response)
 		status = parsedJson["status"]
 		timeTaken = parsedJson["timeTaken"]
@@ -93,9 +93,11 @@ def JsonUtils.process_response(response, api_key, secret, domain, route)
 		headlineObjects = []
 
 		headlineText = nil
+		teamId = nil
 		puts "results::"+ results.to_s
 		puts "results::"+ results.length.to_s
 		results.each do | result|
+			teamId = get_team_id(result["league"], action)
 			headlinePackage = resolveHeadlinePackage(result["league"], action)
 			date = headlinePackage["publishDate"]["full"]
 			dateType = headlinePackage["publishDate"]["dateType"]
@@ -122,15 +124,16 @@ def JsonUtils.process_response(response, api_key, secret, domain, route)
 				imageUrl: headlineObject.imageUrl == nil ? nil : headlineObject.imageUrl
 			}
 		end
-		puts "responseList:: "+ responseList.to_s
+		#puts "responseList:: "+ responseList.to_s
 		finalresponse = {
 			status: status,
 			timeTaken: timeTaken,
 			date: date,
 			dateType: dateType,
-			headlines: responseList
+			headlines: responseList,
+			team_id: teamId
 		}
-		puts "response: "+ finalresponse.to_s
+		#puts "response: "+ finalresponse.to_s
 		finalresponse
 	end
 
@@ -153,6 +156,13 @@ def JsonUtils.resolveHeadlinePackage(league, action)
 		headlinePackage = league["headlinePackage"]	
 	end
 	headlinePackage
+end
+
+def JsonUtils.get_team_id(league, action)
+	if action == Constants::ACTION_RECENT_STORIES_BY_TEAM
+		return league["team"]["teamId"]
+	end
+	return nil
 end
 
 end

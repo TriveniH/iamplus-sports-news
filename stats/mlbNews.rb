@@ -42,10 +42,15 @@ class MLBNews
 	end
 
 	def get_headlines_for_sport
+		#if already in db, pull the data from there itself, otherwise query and add save in the db
+		if DBHelperHeadLines._check_if_league_exists("MLB")
+			return DBHelperHeadLines._retrieve_headlines("MLB")
+		end
 		event_url = "stories/headlines/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['MLB_API_KEY'], ENV['MLB_SECRET'], nil)
 		puts "URL for heading::"+ url
 		response = make_api_request_generic url
+		Utils.save_headlines(response, "MLB")
 		response
 	end
 

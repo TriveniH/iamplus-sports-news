@@ -42,10 +42,15 @@ class NBANews
 	end
 
 	def get_headlines_for_sport
+		#if already in db, pull the data from there itself, otherwise query and add save in the db
+		if DBHelperHeadLines._check_if_league_exists("NBA")
+			return DBHelperHeadLines._retrieve_headlines("NBA")
+		end
 		event_url = "stories/headlines/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NBA_API_KEY'], ENV['NBA_SECRET'], nil)
 		puts "URL for heading::"+ url
 		response = make_api_request_generic url
+		Utils.save_headlines(response, "NBA")
 		response
 	end
 
@@ -75,10 +80,15 @@ class NBANews
 	end
 
 	def get_recent_stories_for_team team_id
+		# if already exists, show from local db for the team and also for the league.
+		if DBHelperHeadLines._check_if_league_team_exists("NBA", team_id)
+			return DBHelperHeadLines._retrieve_headlines_for_team("NBA", team_id)
+		end
 		event_url = "stories/recent/teams/"+ team_id +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NBA_API_KEY'], ENV['NBA_SECRET'], nil)
 		puts "URL for heading::"+ url
 		response = make_api_request_generic url
+		Utils.save_headlines(response, "NBA")
 		response
 	end
 

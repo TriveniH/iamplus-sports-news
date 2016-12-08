@@ -41,48 +41,17 @@ class NFLNews
 	end
 
 	def get_headlines_for_sport
+		#if already in db, pull the data from there itself, otherwise query and add save in the db
+		if DBHelperHeadLines._check_if_league_exists("NFL")
+			return DBHelperHeadLines._retrieve_headlines("NFL")
+		end
 		event_url = "stories/headlines/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], nil)
 		puts "URL for heading::"+ url
 		response = make_api_request_generic url
+		Utils.save_headlines(response, "NFL")
 		response
 	end
-=begin
-
-	def make_api_request url
-		response_back = nil
-		api_request_time = Benchmark.realtime do
-			request = APIRequest.new( :generic, DOMAIN )
-			puts "url::"+ url.to_s
-			response = request.for( :get, url, '')
-
-			request_status = Utils.check_response_status response
-			if request_status != nil
-				return request_status
-			end
-
-			response_back = JsonUtils.process_response(response.body, ENV['NFL_API_KEY'], ENV['NFL_SECRET'] , DOMAIN, ROUTE)
-		end
-		response_back
-	end
-
-	def make_api_request_for_headlines url
-		response_back = nil
-		api_request_time = Benchmark.realtime do
-			request = APIRequest.new( :generic, DOMAIN )
-			puts "url::"+ url.to_s
-			response = request.for( :get, url, '')
-
-			request_status = Utils.check_response_status response
-			if request_status != nil
-				return request_status
-			end
-
-			response_back = JsonUtils.process_response_for_headlines(response.body, ENV['NFL_API_KEY'], ENV['NFL_SECRET'] , DOMAIN, ROUTE)
-		end
-		response_back
-	end
-=end
 
 	def save_game(responseJson, isRecap)
 		puts responseJson.to_s
@@ -110,10 +79,15 @@ class NFLNews
 	end
 
 	def get_recent_stories_for_team team_id
+		# if already exists, show from local db for the team and also for the league.
+		if DBHelperHeadLines._check_if_league_team_exists("NFL", team_id)
+			return DBHelperHeadLines._retrieve_headlines_for_team("NFL", team_id)
+		end
 		event_url = "stories/recent/teams/"+ team_id +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], nil)
 		puts "URL for heading::"+ url
 		response = make_api_request_generic url
+		Utils.save_headlines(response, "NFL")
 		response
 	end
 

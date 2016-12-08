@@ -53,6 +53,10 @@ module Utils
 			puts "data not found"
 			stat_status = {stat_error_code: 404,
 							stat_message: "Data not found"}
+		when 500
+			puts "internal server error"
+			stat_status = {stat_error_code: 500,
+							stat_message: "stat internal server error"}
 		else
 			stat_status = {stat_error_code: response.code,
 							stat_message: "Couldn't fetch data"}
@@ -85,4 +89,29 @@ module Utils
 		end
 		return false
 	end
+
+	def Utils.save_headlines(response, leagueName)
+		#puts response.to_s
+		#response = JSON.parse(responseJson)
+		headlines = response[:headlines]
+		puts "headlines:"+ headlines.to_s
+		if headlines == nil || headlines.length < 1
+			return
+		end
+
+		dateTime = response[:date]
+		dateType = response[:date_type]
+		imageUrl = response[:image_url]
+		teamId = response[:team_id]
+		headlinesArray = []
+		headlines.each do |headline|
+			headlinesArray << headline[:headlineText]
+		end
+		puts "headlinesArray::"+ headlinesArray.to_s
+		if headlinesArray == nil || headlinesArray.length <= 0
+			return
+		end
+		DBHelperHeadLines._save_headlines(dateTime, dateType, imageUrl, headlinesArray, leagueName, teamId)
+	end
+
 end

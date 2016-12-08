@@ -41,11 +41,16 @@ class EPLNews
 	end
 
 	def get_headlines_for_sport
+		#if already in db, pull the data from there itself, otherwise query and add save in the db
+		if DBHelperHeadLines._check_if_league_exists("EPL")
+			return DBHelperHeadLines._retrieve_headlines("EPL")
+		end
 		event_url = "stories/headlines/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
 		puts "URL for heading::"+ url
 		response = make_api_request_generic url
-		puts "response::"+ response.to_s
+		#puts "response::----------------------\n"+ response.to_s
+		Utils.save_headlines(response, "EPL")
 		response
 	end
 
@@ -66,8 +71,6 @@ class EPLNews
 		dateType = response["date_type"]
 		imageUrl = response["image_url"]
 		headline = response["headline"]
-		puts "headline:: "+ headline.to_s
-		puts "response[:content]::"+ response["content"]["paragraphs"].to_s
 		paragraphs = response["content"]["paragraphs"]
 		if isRecap
 			DBHelperRecap._save_recap(eventId, date,
@@ -79,11 +82,15 @@ class EPLNews
 	end
 
 	def get_recent_stories_for_team team_id
-		#response = get_headlines_for_sport
+		# if already exists, show from local db for the team and also for the league.
+		if DBHelperHeadLines._check_if_league_team_exists("EPL", team_id)
+			return DBHelperHeadLines._retrieve_headlines_for_team("EPL", team_id)
+		end
 		event_url = "stories/recent/teams/"+ team_id +"/?"
 		url = ROUTE + event_url + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
 		puts "URL for heading::"+ url
 		response = make_api_request_generic url
+		Utils.save_headlines(response, "EPL")
 		response
 	end
 
