@@ -39,9 +39,12 @@ module Utils
   	end
    
    	def Utils.check_response_status response
-		puts response.code
+		generate_error_response response.code
+	end
+
+	def Utils.generate_error_response errorCode
 		stat_status = nil
-		case response.code
+		case errorCode
 		when 200
 			puts "all good"
 			return nil
@@ -58,14 +61,14 @@ module Utils
 			stat_status = {stat_error_code: 500,
 							stat_message: "stat internal server error"}
 		else
-			stat_status = {stat_error_code: response.code,
+			stat_status = {stat_error_code: errorCode,
 							stat_message: "Couldn't fetch data"}
 			puts "something went wrong"
 			return nil
 		end
 		content = {paragraphs: ["Data not found"]}
 		{
-			status: response.code,
+			status: errorCode,
 			stat_status: stat_status,
 			timeTaken: nil,
 			date: nil,
@@ -113,5 +116,10 @@ module Utils
 		end
 		DBHelperHeadLines._save_headlines(dateTime, dateType, imageUrl, headlinesArray, leagueName, teamId)
 	end
+
+	def Utils._fetch_recap_preview
+		fetch_update_schedule
+	end
+
 
 end

@@ -10,7 +10,8 @@ gem 'oauth'
 gem 'httparty'
 gem 'redis'
 gem 'mongoid'
-gem 'twitter', '~> 5.16'
+gem 'whenever', :require => false
+gem 'rufus-scheduler'
 
 
 group :test do

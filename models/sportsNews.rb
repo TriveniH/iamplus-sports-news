@@ -26,9 +26,9 @@ class SportsNews
 	 	puts "action: "+ @action.to_s
 	 	case @action
 	 	when Constants::ACTION_PREVIEW then
-	 		@gameType.get_preview_of_game(@gameId)
+	 		@gameType.get_preview_for_user_query(@gameId)
 	 	when Constants::ACTION_RECAP then
-	 		@gameType.get_recap_of_game(@gameId)
+	 		@gameType.get_recap_for_user_query(@gameId)
 	 	when Constants::ACTION_HEADLINES then
 	 		@gameType.get_headlines_for_sport
 	 	when Constants::ACTION_RECENT_STORIES_BY_TEAM then

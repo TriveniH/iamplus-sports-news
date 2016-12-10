@@ -1,4 +1,4 @@
-class SavedGamePreview
+class SavedGameRecap
   include Mongoid::Document
   include Mongoid::Timestamps
 
@@ -9,8 +9,9 @@ class SavedGamePreview
   field :headline, type:String
   field :paragraphs, type:Array
   field :league_name, type:String
+  field :error_code, type:String
+  field :error_message, type:String
+
 
   validates_uniqueness_of :event_id
-
-  index({ created_at: 1 }, {expire_after_seconds: 86400})
 end
