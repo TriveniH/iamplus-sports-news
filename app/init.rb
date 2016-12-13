@@ -41,7 +41,7 @@ Mongo::Logger.logger.level = Logger::ERROR
 
 scheduler = Rufus::Scheduler.new
 
-scheduler.in '1s' do
+scheduler.every '2d' do
 	DataFactory.fetch_update_schedule
 	DataFactory.update_previews_recaps
 end
