@@ -11,7 +11,7 @@ require 'oauth'
 require 'httparty'
 require 'redis'
 require 'mongoid'
-require 'rufus-scheduler'
+#require 'rufus-scheduler'
 
 
 # Helper
