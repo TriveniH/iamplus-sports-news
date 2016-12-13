@@ -13,7 +13,7 @@ class NFLNews
 
 	def get_recap_for_user_query(gameId = "1643062")
 		if(DBHelperRecap._check_if_exists(gameId))
-			return DBHelperRecap._retrieve_preview(gameId)
+			return DBHelperRecap._retrieve_recap(gameId)
 		end
 		return Utils.generate_error_response 404
 	end

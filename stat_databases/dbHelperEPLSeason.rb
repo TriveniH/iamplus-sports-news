@@ -14,10 +14,9 @@ module DBHelperEPLSeason
 
 	def DBHelperEPLSeason._get_event_ids_for_preview
 		eventIdList = []
-		SavedSeasonEPL.where(date:(1.month.ago..1.month.from_now)).each do |s|
+		SavedSeasonEPL.where(date:(1.month.ago..2.days.from_now)).each do |s|
 			eventIdList << s['event_id']
 		end
-		puts "eventIdList for recap:: "+ eventIdList.length.to_s
 		eventIdList
 	end
 

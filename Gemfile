@@ -10,7 +10,6 @@ gem 'oauth'
 gem 'httparty'
 gem 'redis'
 gem 'mongoid'
-gem 'whenever', :require => false
 gem 'rufus-scheduler'
 
 

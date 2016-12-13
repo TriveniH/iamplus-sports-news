@@ -14,7 +14,7 @@ module DBHelperMLBSeason
 
 	def DBHelperMLBSeason._get_event_ids_for_preview
 		eventIdList = []
-		SavedSeasonMLB.where(date:(3.months.ago..1.month.from_now)).each do |s|
+		SavedSeasonMLB.where(date:(3.months.ago..2.days.from_now)).each do |s|
   			eventIdList << s['event_id']
 		end
 		puts "MLB:: event list for preview:"+ eventIdList.length.to_s

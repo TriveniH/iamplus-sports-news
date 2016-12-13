@@ -14,10 +14,10 @@ module DBHelperNFLSeason
 
 	def DBHelperNFLSeason._get_event_ids_for_preview
 		eventIdList = []
-		SavedSeasonNFL.where(date:(1.month.ago..1.month.from_now)).each do |s|
+		SavedSeasonNFL.where(date:(1.month.ago..2.days.from_now)).each do |s|
   			eventIdList << s['event_id']
 		end
-		puts "NFL:: preview list"+eventIdList.length.to_s
+		puts "nfl preview eventIdList::"+ eventIdList.length.to_s
 		eventIdList
 	end
 
