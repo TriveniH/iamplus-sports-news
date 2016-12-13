@@ -36,12 +36,13 @@ $stdout.sync = true
 set :raise_errors, true
 set :show_exceptions, false
 
-Mongoid.load!( 'config/mongoid.yml', ENV[ 'RACK_ENV' ])
+Mongoid.load!( 'config/mongoid.yml', :test)
 Mongo::Logger.logger.level = Logger::ERROR
 
-scheduler = Rufus::Scheduler.new
+#scheduler = Rufus::Scheduler.new
 
-scheduler.in '1s' do
-	DataFactory.fetch_update_schedule
-	DataFactory.update_previews_recaps
-end
+#scheduler.in '1s' do
+	#DataFactory.fetch_update_schedule
+#	puts "scheduler"
+#	DataFactory.update_previews_recaps
+#end
