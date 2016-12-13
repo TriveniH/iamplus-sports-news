@@ -11,7 +11,7 @@ require 'oauth'
 require 'httparty'
 require 'redis'
 require 'mongoid'
-#require 'rufus-scheduler'
+require 'rufus-scheduler'
 
 
 # Helper
@@ -39,10 +39,9 @@ set :show_exceptions, false
 Mongoid.load!( 'config/mongoid.yml', :test)
 Mongo::Logger.logger.level = Logger::ERROR
 
-#scheduler = Rufus::Scheduler.new
+scheduler = Rufus::Scheduler.new
 
-#scheduler.in '1s' do
-	#DataFactory.fetch_update_schedule
-#	puts "scheduler"
-#	DataFactory.update_previews_recaps
-#end
+scheduler.every '2d' do
+	DataFactory.fetch_update_schedule
+	DataFactory.update_previews_recaps
+end

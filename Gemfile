@@ -10,7 +10,7 @@ gem 'oauth'
 gem 'httparty'
 gem 'redis'
 gem 'mongoid'
-#gem 'rufus-scheduler'
+gem 'rufus-scheduler'
 
 
 group :test do
