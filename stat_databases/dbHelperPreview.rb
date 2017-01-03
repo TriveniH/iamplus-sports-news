@@ -86,7 +86,7 @@ module DBHelperPreview
 
 	def DBHelperPreview.update_event(eventId, dateTime, dateType, imageUrl,
 				headline, paragraphs, leagueName)
-		DBHelperPreview.find_by(event_id: eventId).update(date: dateTime,
+		SavedGamePreview.find_by(event_id: eventId).update(date: dateTime,
 						date_type: dateType,
 						image_url: imageUrl,
 						headline: headline,
