@@ -2,6 +2,13 @@ module DBHelperPreview
 
 	def DBHelperPreview._save_preview(eventId, dateTime, 
 			dateType, imageUrl, headline, paragraphs, leagueName, errorCode, errorMessage)
+			SavedGamePreview.find_by(event_id: eventId) do | savedGame|
+				errorCodeGame = savedGame[:error_code]
+				if errorCodeGame != nil && errorCode == nil
+					update_event(eventId, dateTime, 
+						dateType, imageUrl, headline, paragraphs, leagueName)
+				end
+			end
 		SavedGamePreview.create( event_id: eventId,
 						date: dateTime,
 						date_type: dateType,
@@ -75,5 +82,17 @@ module DBHelperPreview
 			content: content
 		}
 		return saved_game_json
+	end
+
+	def DBHelperPreview.update_event(eventId, dateTime, dateType, imageUrl,
+				headline, paragraphs, leagueName)
+		DBHelperPreview.find_by(event_id: eventId).update(date: dateTime,
+						date_type: dateType,
+						image_url: imageUrl,
+						headline: headline,
+						paragraphs: paragraphs,
+						league_name: leagueName,
+						error_code: nil,
+						error_message: nil)
 	end
 end

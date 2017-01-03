@@ -1427,3 +1427,108 @@
 [2016-11-23 14:31:01 +0530 meenal-Lenovo-Yoga-500-14IBD (8421)] INFO : Doing deferred dependency-detection before Rack startup
 [2016-11-23 14:31:01 +0530 meenal-Lenovo-Yoga-500-14IBD (8421)] INFO : Installing Redis Instrumentation
 [2016-11-23 14:31:01 +0530 meenal-Lenovo-Yoga-500-14IBD (8421)] INFO : Installing Mongo instrumentation
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : Starting the New Relic agent in "development" environment.
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/iamplus-sports-news)
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : Environment: development
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : No known dispatcher detected.
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : Application: API Server
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] WARN : Agent configured not to send data in this environment.
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : Installing Net instrumentation
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : Installing Sinatra instrumentation
+[2017-01-03 12:27:55 +0530 triveni-K55VM (18090)] INFO : Finished instrumentation
+[2017-01-03 12:27:56 +0530 triveni-K55VM (18090)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-01-03 12:27:56 +0530 triveni-K55VM (18090)] INFO : Installing Mongo instrumentation
+[2017-01-03 12:27:56 +0530 triveni-K55VM (18090)] INFO : Installing Redis Instrumentation
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : Starting the New Relic agent in "development" environment.
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/iamplus-sports-news)
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : Environment: development
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : No known dispatcher detected.
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : Application: API Server
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] WARN : Agent configured not to send data in this environment.
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : Installing Net instrumentation
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : Installing Sinatra instrumentation
+[2017-01-03 12:28:21 +0530 triveni-K55VM (18224)] INFO : Finished instrumentation
+[2017-01-03 12:28:22 +0530 triveni-K55VM (18224)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-01-03 12:28:22 +0530 triveni-K55VM (18224)] INFO : Installing Mongo instrumentation
+[2017-01-03 12:28:22 +0530 triveni-K55VM (18224)] INFO : Installing Redis Instrumentation
+[2017-01-03 12:28:44 +0530 triveni-K55VM (18324)] INFO : Starting the New Relic agent in "development" environment.
+[2017-01-03 12:28:44 +0530 triveni-K55VM (18324)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-01-03 12:28:44 +0530 triveni-K55VM (18324)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/iamplus-sports-news)
+[2017-01-03 12:28:44 +0530 triveni-K55VM (18324)] INFO : Environment: development
+[2017-01-03 12:28:44 +0530 triveni-K55VM (18324)] INFO : No known dispatcher detected.
+[2017-01-03 12:28:44 +0530 triveni-K55VM (18324)] INFO : Application: API Server
+[2017-01-03 12:28:44 +0530 triveni-K55VM (18324)] WARN : Agent configured not to send data in this environment.
+[2017-01-03 12:28:45 +0530 triveni-K55VM (18324)] INFO : Installing Net instrumentation
+[2017-01-03 12:28:45 +0530 triveni-K55VM (18324)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-01-03 12:28:45 +0530 triveni-K55VM (18324)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-01-03 12:28:45 +0530 triveni-K55VM (18324)] INFO : Installing Sinatra instrumentation
+[2017-01-03 12:28:45 +0530 triveni-K55VM (18324)] INFO : Finished instrumentation
+[2017-01-03 12:28:45 +0530 triveni-K55VM (18324)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-01-03 12:28:45 +0530 triveni-K55VM (18324)] INFO : Installing Mongo instrumentation
+[2017-01-03 12:28:45 +0530 triveni-K55VM (18324)] INFO : Installing Redis Instrumentation
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : Starting the New Relic agent in "development" environment.
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/iamplus-sports-news)
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : Environment: development
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : No known dispatcher detected.
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : Application: API Server
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] WARN : Agent configured not to send data in this environment.
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : Installing Net instrumentation
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : Installing Sinatra instrumentation
+[2017-01-03 15:04:04 +0530 triveni-K55VM (6240)] INFO : Finished instrumentation
+[2017-01-03 15:04:05 +0530 triveni-K55VM (6240)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-01-03 15:04:05 +0530 triveni-K55VM (6240)] INFO : Installing Mongo instrumentation
+[2017-01-03 15:04:05 +0530 triveni-K55VM (6240)] INFO : Installing Redis Instrumentation
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : Starting the New Relic agent in "development" environment.
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/iamplus-sports-news)
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : Environment: development
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : No known dispatcher detected.
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : Application: API Server
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] WARN : Agent configured not to send data in this environment.
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : Installing Net instrumentation
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : Installing Sinatra instrumentation
+[2017-01-03 15:15:43 +0530 triveni-K55VM (7726)] INFO : Finished instrumentation
+[2017-01-03 15:15:44 +0530 triveni-K55VM (7726)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-01-03 15:15:44 +0530 triveni-K55VM (7726)] INFO : Installing Mongo instrumentation
+[2017-01-03 15:15:44 +0530 triveni-K55VM (7726)] INFO : Installing Redis Instrumentation
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : Starting the New Relic agent in "development" environment.
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/iamplus-sports-news)
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : Environment: development
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : No known dispatcher detected.
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : Application: API Server
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] WARN : Agent configured not to send data in this environment.
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : Installing Net instrumentation
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : Installing Sinatra instrumentation
+[2017-01-03 15:25:20 +0530 triveni-K55VM (9149)] INFO : Finished instrumentation
+[2017-01-03 15:25:21 +0530 triveni-K55VM (9149)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-01-03 15:25:21 +0530 triveni-K55VM (9149)] INFO : Installing Mongo instrumentation
+[2017-01-03 15:25:21 +0530 triveni-K55VM (9149)] INFO : Installing Redis Instrumentation
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Starting the New Relic agent in "development" environment.
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Reading configuration from config/newrelic.yml (/home/triveni/iamplus-sports-news)
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Environment: development
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : No known dispatcher detected.
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Application: API Server
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] WARN : Agent configured not to send data in this environment.
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Installing Net instrumentation
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Installing Sinatra instrumentation
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Finished instrumentation
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Installing Mongo instrumentation
+[2017-01-03 15:50:05 +0530 triveni-K55VM (12463)] INFO : Installing Redis Instrumentation

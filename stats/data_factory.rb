@@ -82,30 +82,38 @@ module DataFactory
 	end
 
 	def DataFactory.update_previews_recaps
-
+		DBHelperHeadLines.clearAllHeadlines
 		#pull for EPL
 		eplNews = EPLNews.new(Constants::ACTION_PREVIEW)
 		eplNews.get_preview_for_ids(DBHelperEPLSeason._get_event_ids_for_preview)
 		eplNews = EPLNews.new(Constants::ACTION_RECAP)
 		eplNews.get_recap_for_ids(DBHelperEPLSeason._get_event_ids_for_recap)
+		eplNews = EPLNews.new(Constants::ACTION_HEADLINES)
+		eplNews.get_headlines_for_sport
 
 		#pull for NBA
 		nbaNews = NBANews.new(Constants::ACTION_PREVIEW)
 		nbaNews.get_preview_for_ids(DBHelperNBASeason._get_event_ids_for_preview)
 		nbaNews = NBANews.new(Constants::ACTION_RECAP)
 		nbaNews.get_recap_for_ids(DBHelperNBASeason._get_event_ids_for_recap)
+		nbaNews = NBANews.new(Constants::ACTION_HEADLINES)
+		nbaNews.get_headlines_for_sport
 
 		#pull for MLB
 		mlbNews = MLBNews.new(Constants::ACTION_PREVIEW)
 		mlbNews.get_preview_for_ids(DBHelperMLBSeason._get_event_ids_for_preview)
 		mlbNews = MLBNews.new(Constants::ACTION_RECAP)
 		mlbNews.get_recap_for_ids(DBHelperMLBSeason._get_event_ids_for_recap)
+		mlbNews = MLBNews.new(Constants::ACTION_HEADLINES)
+		mlbNews.get_headlines_for_sport
 
 		#pull for NFL
 		nflNews = NFLNews.new(Constants::ACTION_PREVIEW)
 		nflNews.get_preview_for_ids(DBHelperNFLSeason._get_event_ids_for_preview)
 		nflNews = NFLNews.new(Constants::ACTION_RECAP)
 		nflNews.get_recap_for_ids(DBHelperNFLSeason._get_event_ids_for_recap)
+		nflNews = NFLNews.new(Constants::ACTION_HEADLINES)
+		nflNews.get_headlines_for_sport
 
 	end
 

@@ -65,4 +65,11 @@ module DBHelperHeadLines
 
 		return saved_game_json
 	end
+
+	def DBHelperHeadLines.clearAllHeadlines
+		SavedHeadLines.where(league_name: "EPL").delete
+		SavedHeadLines.where(league_name: "NFL").delete
+		SavedHeadLines.where(league_name: "MLB").delete
+		SavedHeadLines.where(league_name: "NBA").delete
+	end
 end
