@@ -12,7 +12,7 @@ require 'httparty'
 require 'redis'
 require 'mongoid'
 require 'rufus-scheduler'
-
+require 'zipkin-tracer'
 
 # Helper
 require './app/helpers'
@@ -45,3 +45,11 @@ scheduler.every '1d' do
 	DataFactory.fetch_update_schedule
 	DataFactory.update_previews_recaps
 end
+
+zipkin_config = { service_name:ENV[ 'NEW_RELIC_APP_NAME' ],
+                  service_port:settings.port,
+                  sampled_as_boolean:false,
+                  sample_rate: 1,
+                  json_api_host: ENV[ 'ZIPKIN_JSON_API_HOST' ]}
+
+use ZipkinTracer::RackHandler, zipkin_config

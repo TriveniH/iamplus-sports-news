@@ -11,6 +11,7 @@ gem 'httparty'
 gem 'redis'
 gem 'mongoid'
 gem 'rufus-scheduler'
+gem 'zipkin-tracer', '~> 0.20.1'
 
 
 group :test do

@@ -20,16 +20,18 @@ end
 
 def JsonUtils.make_api_request_generic(url, action, api_key, secret, domain, route)
 	response_back = nil
-	api_request_time = Benchmark.realtime do
-		request = APIRequest.new( :generic, domain )
-		puts "url::"+ url.to_s
-		response = request.for( :get, url, '')
-		request_status = Utils.check_response_status response
-		if request_status != nil
-			return request_status
+	ZipkinTracer::TraceClient.local_component_span( "External API Call to #{ self }" ) do | ztc |
+		api_request_time = Benchmark.realtime do
+			request = APIRequest.new( :generic, domain )
+			puts "url::"+ url.to_s
+			response = request.for( :get, url, '')
+			request_status = Utils.check_response_status response
+			if request_status != nil
+				return request_status
+			end
+			#puts "response.body::"+ response.body.to_s
+			response_back = process_response_action_based(response.body, api_key, secret, domain, route, action)
 		end
-		#puts "response.body::"+ response.body.to_s
-		response_back = process_response_action_based(response.body, api_key, secret, domain, route, action)
 	end
 	return response_back
 end

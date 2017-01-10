@@ -9,21 +9,25 @@ get '/' do
 end
 
 get '/sports_news' do
-  eventIds = params[:event_ids]
-  puts params.to_s
-  error_status = check_for_sport_Id
-  if error_status != nil
-    return error_status.to_json
+  response = nil
+  ZipkinTracer::TraceClient.local_component_span( "External API Call to #{ self }" ) do | ztc |
+    totalProcessTimeInMilli = Benchmark.ms do
+      eventIds = params[:event_ids]
+      puts params.to_s
+      error_status = check_for_sport_Id
+      if error_status != nil
+        return error_status.to_json
+      end
+
+      news = SportsNews.new(params)
+      response = news.get_data.to_json
+
+      error_response = set_status response
+      if error_response != nil
+        return error_response.to_json
+      end
+    end
   end
-
-  news = SportsNews.new(params)
-  response = news.get_data.to_json
-
-  error_response = set_status response
-  if error_response != nil
-    return error_response.to_json
-  end
-
   return response
 end
 
