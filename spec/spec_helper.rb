@@ -36,7 +36,7 @@ RSpec.configure do |config|
   config.before( :each ) do
 
     Redis.new.flushdb
-    Mongoid.purge!
+#    Mongoid.purge!
   end
 end
 

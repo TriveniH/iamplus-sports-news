@@ -26,18 +26,22 @@ describe 'API Spec' do
   describe 'HeadLines' do
     specify 'should return headlines for EPL' do
       get '/sports_news', sport: "EPL"
+      expect( last_response.status).to eq 200
       expect( parsed_response[ :headlines ][ 0 ]).not_to be_empty
     end
     specify 'should return headlines for MLB' do
       get '/sports_news', sport: "MLB"
+      expect( last_response.status).to eq 200
       expect( parsed_response[ :headlines ][ 0 ]).not_to be_empty
     end
     specify 'should return headlines for NBA' do
       get '/sports_news', sport: "NBA"
+      expect( last_response.status).to eq 200
       expect( parsed_response[ :headlines ][ 0 ]).not_to be_empty
     end
     specify 'should return headlines for NFL' do
       get '/sports_news', sport: "NFL"
+      expect( last_response.status).to eq 200
       expect( parsed_response[ :headlines ][ 0 ]).not_to be_empty
     end
   end
@@ -45,42 +49,39 @@ describe 'API Spec' do
 
   describe 'Team news' do
     context 'Team id is nil/empty' do
-      specify 'It should verify 200 error' do
+      specify 'It should verify that it shows HeadLines for sport' do
         get '/sports_news', {sport: "EPL", team_id: ""}
 
         expect( last_response.status).to eq 200
-        expect( parsed_response[ :team_id]).to be_nil
+        expect( parsed_response[ :teamId]).to be_nil
       end
     end
     context 'With Team Id' do
       specify 'it should return team news' do
         get '/sports_news', {sport: "EPL", team_id: "6145"}
         expect( last_response.status).to eq 200
-        expect( parsed_response[ :team_id]).to eql 6145
+        expect( parsed_response[ :teamId]).to eql "6145"
         expect( parsed_response[ :headlines][0]).not_to be_empty
       end
     end
   end
 
-=begin
-
   describe 'Previews' do
     context 'with valid event id' do
       specify 'when no preview available for the event yet' do
-        get '/sports_news', {sport: "EPL", event_id: "1601464"}
+        get '/sports_news', {sport: "EPL", event_id: "1643340"}
         expect( last_response.status ).to eq 404
         expect( parsed_response[ :eventId ]).to be_nil
       end
       specify 'when preview available for the event' do
-        get '/sports_news', {sport: "EPL", event_id: "1643298"}
+        get '/sports_news', {sport: "EPL", event_id: "1643241"}
         expect( last_response.status).to eq 200
-        expect( parsed_response[ :eventId ]).to "1643298"
+        expect( parsed_response[ :eventId ]).to eq "1643241"
         expect( parsed_response[ :headline ]).not_to be_nil
         expect( parsed_response[ :content ][ :paragraphs ]).not_to be_empty
         expect( parsed_response[ :content ][ :paragraphs ][0]).not_to be_nil
       end
     end
   end
-=end
 
 end
