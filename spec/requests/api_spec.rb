@@ -1,122 +1,86 @@
 describe 'API Spec' do
-  let( :mentions   ){[ { "field_id": "query",
-                          "value": "sushi" },
-                        { "field_id": "location",
-                          "value": "los angeles" } ]}
-  let( :params ){{ nlu_response:{
-                     mentions:mentions,
-                     intent:'search', },
-                   user_data:{ 'identity_token': 'abc123' } }}
-  let( :expected  ){{ name:'KazuNori', image_url:'https://s3-media3.fl.yelpcdn.com/bphoto/9D63gCmIesyBQO15NNG9Xw/ms.jpg' }}
-  let( :cache_key ){ 'search-los angeles-sushi-5' }
-
-  let( :token        ){ 'abc123'   }
-  let( :user_uuid    ){ 'user-1234' }
   let( :identity_url ){ "#{ Identity::IDENTITY_DOMAIN }#{ Identity::IDENTITY_PATH }"}
-
-  let( :business_from_yelp ){ JSON.parse( yelp_response, symbolize_names:true )[ :businesses ][ 0 ]}
 
   before do
     header 'Content-Type', 'application/json'
-
-    WebMock.stub_request( :get, identity_url )
-      .with( body:"access_token=#{ token }")
-      .to_return( status:    200,
-                  headers:{ 'Content-Type' => 'application/json' },
-                  body:   {  user_uuid:user_uuid }.to_json        )
+    stub_headlines
+    stub_team_news
   end
 
-  specify 'Search returns Yelp response' do
-    post '/search', params.to_json
 
-    expect( parsed_response[ :response_data ][ :businesses ][ 0 ]).to include business_from_yelp
+  describe 'validate sport Name' do
+      #for all the sports.
+      specify 'check for sport name being nil/empty' do
+        get '/sports_news'
+        expect( last_response.status).to eq 400
+      end
+
+      #checking for invalid sport name
+      specify 'check for invalid sport name' do
+        get '/sports_news', sport: "CRICKET"
+        expect( last_response.status).to eq 400
+      end
   end
 
-  specify 'Search injects entity ids into businesses' do
-    post '/search', params.to_json
 
-    expect( parsed_response[ :response_data ][ :businesses ][ 0 ][ :entity_id ].length ).to eq 36
-  end
-
-  describe 'Format' do
-    # 1 entity will contain response data. We don't know which one.
-    let( :entities ){[{}, { response_data:@response_data }]}
-
-    before do
-      post '/search', params.to_json
-      @response_data = parsed_response[ :response_data ]
+  describe 'HeadLines' do
+    specify 'should return headlines for EPL' do
+      get '/sports_news', sport: "EPL"
+      expect( parsed_response[ :headlines ][ 0 ]).not_to be_empty
     end
-
-    specify do
-      post '/format', { mentions:{ entity:entities }}.to_json
-
-      expect( last_response.status ).to eq 200
-      expect( last_response.content_type ).to eq 'application/json'
-      expect( parsed_response[ :IntroSpeakOut ]).to eq 'Here are the results of your search.'
-      expect( parsed_response[ :CardsData ].count ).to eq 5
-      expect( parsed_response[ :CardsData ][ 0 ][ :SpeakOut ]).to eq 'KazuNori is located at 421 S Main St'
-      expect( parsed_response[ :CardsData ][ 0 ][ :ImageUrl ]).to eq 'https://s3-media3.fl.yelpcdn.com/bphoto/9D63gCmIesyBQO15NNG9Xw/ms.jpg'
+    specify 'should return headlines for MLB' do
+      get '/sports_news', sport: "MLB"
+      expect( parsed_response[ :headlines ][ 0 ]).not_to be_empty
+    end
+    specify 'should return headlines for NBA' do
+      get '/sports_news', sport: "NBA"
+      expect( parsed_response[ :headlines ][ 0 ]).not_to be_empty
+    end
+    specify 'should return headlines for NFL' do
+      get '/sports_news', sport: "NFL"
+      expect( parsed_response[ :headlines ][ 0 ]).not_to be_empty
     end
   end
 
-  specify 'Sets cache' do
-    post '/search', params.to_json
 
-    expect( Redis.new.get( cache_key )).to eq yelp_response
-  end
+  describe 'Team news' do
+    context 'Team id is nil/empty' do
+      specify 'It should verify 200 error' do
+        get '/sports_news', {sport: "EPL", team_id: ""}
 
-  specify 'Sets cache expiry' do
-    post '/search', params.to_json
-
-    expect( Redis.new.ttl( cache_key )).to eq Cacheable::EXPIRY
-  end
-
-  specify 'Gets from cache' do
-    post '/search', params.to_json
-    post '/search', params.to_json
-
-    expect( WebMock ).to have_requested( :get, %r{http://api.yelp.com/v2/search}).once
-  end
-
-  context 'When not_cached is true do not get from cache' do
-    specify do
-      post '/search', params.to_json
-      post '/search', params.merge( not_cached:true ).to_json
-
-      expect( WebMock ).to have_requested( :get, %r{http://api.yelp.com/v2/search}).twice
+        expect( last_response.status).to eq 200
+        expect( parsed_response[ :team_id]).to be_nil
+      end
+    end
+    context 'With Team Id' do
+      specify 'it should return team news' do
+        get '/sports_news', {sport: "EPL", team_id: "6145"}
+        expect( last_response.status).to eq 200
+        expect( parsed_response[ :team_id]).to eql 6145
+        expect( parsed_response[ :headlines][0]).not_to be_empty
+      end
     end
   end
 
-  describe 'Save recent query for user' do
-    specify 'creates' do
-      post '/search', params.to_json
-      
-      expect( last_response.status ).to eq 200
+=begin
 
-      expect( SavedQuery.count ).to eq 1
-      expect( SavedQuery.first.query    ).to eq 'sushi'
-      expect( SavedQuery.first.location ).to eq 'los angeles'
-      expect( SavedQuery.first.user_uuid ).to eq 'user-1234'
-    end
-
-    specify 'uniqueness' do
-      post '/search', params.to_json
-      post '/search', params.to_json
-      
-      expect( last_response.status ).to eq 200
-
-      expect( SavedQuery.count ).to eq 1
-      expect( SavedQuery.first.query    ).to eq 'sushi'
-      expect( SavedQuery.first.location ).to eq 'los angeles'
+  describe 'Previews' do
+    context 'with valid event id' do
+      specify 'when no preview available for the event yet' do
+        get '/sports_news', {sport: "EPL", event_id: "1601464"}
+        expect( last_response.status ).to eq 404
+        expect( parsed_response[ :eventId ]).to be_nil
+      end
+      specify 'when preview available for the event' do
+        get '/sports_news', {sport: "EPL", event_id: "1643298"}
+        expect( last_response.status).to eq 200
+        expect( parsed_response[ :eventId ]).to "1643298"
+        expect( parsed_response[ :headline ]).not_to be_nil
+        expect( parsed_response[ :content ][ :paragraphs ]).not_to be_empty
+        expect( parsed_response[ :content ][ :paragraphs ][0]).not_to be_nil
+      end
     end
   end
+=end
 
-  describe 'Exposes ExternalApiRequestTime' do
-    specify 'Success' do
-      post '/search', params.to_json
-
-      expect( parsed_response[ :ExternalApiRequestTime ][ :Yelp ]).to be > 0
-      expect( parsed_response[ :ExternalApiRequestTime ][ :Yelp ]).to be < 1
-    end
-  end
 end

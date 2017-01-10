@@ -1,0 +1,100 @@
+{
+    "status": "OK",
+    "recordCount": 10,
+    "startTimestamp": "2017-01-09T07:26:02.6485489Z",
+    "endTimestamp": "2017-01-09T07:26:02.6797983Z",
+    "timeTaken": 0.0312494,
+    "apiResults": [{
+        "sportId": 8,
+        "name": "Soccer",
+        "league": {
+            "leagueId": 39,
+            "name": "English Premier League",
+            "abbreviation": "EPL",
+            "displayName": "EPL",
+            "headlinePackage": {
+                "publishDate": {
+                    "year": 2017,
+                    "month": 1,
+                    "date": 9,
+                    "hour": 2,
+                    "minute": 1,
+                    "second": 5,
+                    "full": "2017-01-09T02:01:05",
+                    "dateType": "Eastern"
+                },
+                "headlines": [{
+                    "headlineSequence": 1,
+                    "headlineText": "Klopp's decision to field youngest ever side backfires",
+                    "storyId": "20170108163146910809408",
+                    "originalStoryId": "20170108104710012768708",
+                    "version": 4,
+                    "storySource": "AP"
+                }, {
+                    "headlineSequence": 2,
+                    "headlineText": "Rooney equals record as United beats Reading 4-0 in FA Cup",
+                    "storyId": "20170107132101632416708",
+                    "originalStoryId": "20170107101412376402408",
+                    "version": 4,
+                    "storySource": "AP"
+                }, {
+                    "headlineSequence": 3,
+                    "headlineText": "Silva says he'll need miracle to keep Hull in EPL",
+                    "storyId": "20170106111239597172908",
+                    "originalStoryId": "20170106111239597172908",
+                    "version": 0,
+                    "storySource": "AP"
+                }, {
+                    "headlineSequence": 4,
+                    "headlineText": "Chelsea's Mikel follows Oscar with China Super League move",
+                    "storyId": "20170106072825899156408",
+                    "originalStoryId": "20170106060935229153208",
+                    "version": 1,
+                    "storySource": "AP"
+                }, {
+                    "headlineSequence": 5,
+                    "headlineText": "FA Cup fights for relevance as EPL gets wealthier",
+                    "storyId": "20170105151943711926208",
+                    "originalStoryId": "20170105123453998911908",
+                    "version": 1,
+                    "storySource": "AP"
+                }, {
+                    "headlineSequence": 6,
+                    "headlineText": "Southampton says captain Jose Fonte has asked to leave club",
+                    "storyId": "20170105122651772911608",
+                    "originalStoryId": "20170105111800413905408",
+                    "version": 1,
+                    "storySource": "AP"
+                }, {
+                    "headlineSequence": 7,
+                    "headlineText": "Hull hires Marco Silva as manager as club fights relegation",
+                    "storyId": "20170105080641956891008",
+                    "originalStoryId": "20170105074334486890008",
+                    "version": 1,
+                    "storySource": "AP"
+                }, {
+                    "headlineSequence": 8,
+                    "headlineText": "Tottenham beats Chelsea 2-0 to end 13-match EPL winning run",
+                    "storyId": "20170104182100700685408",
+                    "originalStoryId": "20170104170348431674708",
+                    "version": 2,
+                    "storySource": "AP"
+                }, {
+                    "headlineSequence": 9,
+                    "headlineText": "Cellino sells half of English team Leeds to fellow Italian",
+                    "storyId": "20170104112110854649108",
+                    "originalStoryId": "20170104102423530644308",
+                    "version": 1,
+                    "storySource": "AP"
+                }, {
+                    "headlineSequence": 10,
+                    "headlineText": "Swansea beats Crystal Palace in Clement's debut",
+                    "storyId": "20170103173023518437304",
+                    "originalStoryId": "20170103173023518437304",
+                    "version": 0,
+                    "storySource": "STATS"
+                }]
+            }
+        }
+    }]
+}

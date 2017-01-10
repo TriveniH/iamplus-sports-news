@@ -17,6 +17,7 @@ GEM
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
+    docile (1.1.5)
     ffi (1.9.14)
     formatador (0.2.5)
     guard (2.14.0)
@@ -37,6 +38,7 @@ GEM
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
+    json (2.0.2)
     kgio (2.10.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -91,6 +93,11 @@ GEM
       tzinfo
     safe_yaml (1.0.4)
     shellany (0.0.1)
+    simplecov (0.12.0)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     sinatra (1.4.7)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -125,6 +132,7 @@ DEPENDENCIES
   redis
   rspec
   rufus-scheduler
+  simplecov
   sinatra
   unicorn
   webmock

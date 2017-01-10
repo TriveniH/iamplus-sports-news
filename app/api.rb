@@ -10,7 +10,6 @@ end
 
 get '/sports_news' do
   eventIds = params[:event_ids]
-  puts "eventIds::"+ eventIds.to_s
   puts params.to_s
   error_status = check_for_sport_Id
   if error_status != nil
@@ -32,7 +31,10 @@ def check_for_sport_Id
   sportId = params[:sport]
   if sportId == nil || sportId.to_s.strip == ''
     status "400"
-    return {status: "missing sport Name"}
+    return {status_message: "Missing sport Name in the request."}
+  elsif !Constants::SUPPORTED_SPORTS.include?(sportId)
+        status "400"
+    return {status_message: "Invalid sport Name in the request."}
   end
   return nil
 end

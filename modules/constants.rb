@@ -5,4 +5,6 @@ module Constants
 	ACTION_HEADLINES = "headlines"
 	ACTION_RECENT_STORIES_BY_TEAM = "recent_stories_by_team"
 
+	SUPPORTED_SPORTS = ["EPL", "MLB", "NBA", "NFL"]
+
 end

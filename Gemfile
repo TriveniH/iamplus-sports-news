@@ -19,4 +19,5 @@ group :test do
   gem 'rack-test'
   gem 'rb-fsevent'
   gem 'webmock'
+  gem 'simplecov'
 end

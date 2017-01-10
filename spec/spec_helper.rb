@@ -2,10 +2,13 @@ require 'rack'
 require 'rspec'
 require 'rack/test'
 require 'webmock/rspec'
+require 'simplecov'
 
 
 ENV[ 'RACK_ENV' ] = 'test'
 ENV[ 'OAUTH2_ACCESS_TOKEN' ] = 'OAUTH2_ACCESS_TOKEN'
+
+SimpleCov.start
 
  # App
 require './app/init'
@@ -13,7 +16,7 @@ require './app/init'
 
 # Helpers
 require './spec/shared/helpers'
-
+require_all :spec
 
 RSpec.configure do |config|
   config.filter_run focus:true
@@ -31,10 +34,6 @@ RSpec.configure do |config|
   ]
 
   config.before( :each ) do
-    yelp_url = 'http://api.yelp.com/v2/search?category_filter=sushi&limit=5&location=los%20angeles'
-
-    WebMock.stub_request(:get, yelp_url )
-      .to_return( status:200, body:yelp_response, headers:{} )
 
     Redis.new.flushdb
     Mongoid.purge!
