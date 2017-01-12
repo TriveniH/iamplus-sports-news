@@ -28,5 +28,6 @@ module DBHelperNFLSeason
 			eventIdList << s['event_id']
 		end
 		puts "NFL:: recap list:"+ eventIdList.length.to_s
+		eventIdList
 	end
 end
