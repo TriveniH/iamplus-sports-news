@@ -1,23 +1,25 @@
 module DataFactory
 
-	def DataFactory.fetch_update_schedule
+	def DataFactory.fetch_update_schedule season=2016
 
 		domain = "http://api.stats.com/"
 
 		route = "v1/stats/soccer/epl/"
-		url = route + "scores/?season=2016&" + Utils.get_api_key_signature_string(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
+
+		url = route + "scores/?api_key=#{ENV['EPL_API_KEY']}&season=#{season}&sig=" + Utils.generateSignature(ENV['EPL_API_KEY'], ENV['EPL_SECRET'], nil)
+		puts url
 		make_request(url, "EPL")
 
 		route = "v1/stats/basketball/nba/"
-		url = route + "scores/?season=2016&" + Utils.get_api_key_signature_string(ENV['NBA_API_KEY'], ENV['NBA_SECRET'], nil)
+		url = route + "scores/?season=#{season}&" + Utils.get_api_key_signature_string(ENV['NBA_API_KEY'], ENV['NBA_SECRET'], nil)
 		make_request(url, "NBA")
 
 		route = "v1/stats/baseball/mlb/"
-		url = route + "scores/?season=2016&" + Utils.get_api_key_signature_string(ENV['MLB_API_KEY'], ENV['MLB_SECRET'], nil)
+		url = route + "scores/?season=#{season}&" + Utils.get_api_key_signature_string(ENV['MLB_API_KEY'], ENV['MLB_SECRET'], nil)
 		make_request(url, "MLB")
 
 		route = "v1/stats/football/nfl/"
-		url = route + "scores/?season=2016&" + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], nil)
+		url = route + "scores/?season=#{season}&" + Utils.get_api_key_signature_string(ENV['NFL_API_KEY'], ENV['NFL_SECRET'], nil)
 		make_request(url, "NFL")
 
 	end
@@ -114,7 +116,45 @@ module DataFactory
 		nflNews.get_recap_for_ids(DBHelperNFLSeason._get_event_ids_for_recap)
 		nflNews = NFLNews.new(Constants::ACTION_HEADLINES)
 		nflNews.get_headlines_for_sport
+	end
 
+	def DataFactory.update_preview_for_event_id(league, eventId)
+		eventIdList = []
+		eventIdList << eventId
+		puts "eventIdList::"+ eventIdList.to_s
+		case league
+			when "EPL"
+				eplNews = EPLNews.new(Constants::ACTION_PREVIEW)
+				eplNews.get_preview_for_ids(eventIdList)
+			when "MLB"
+				mlbNews = MLBNews.new(Constants::ACTION_PREVIEW)
+				mlbNews.get_preview_for_ids(eventIdList)
+			when "NBA"
+				nbaNews = NBANews.new(Constants::ACTION_PREVIEW)
+				nbaNews.get_preview_for_ids(eventIdList)
+			when "NFL"
+				nflNews = NFLNews.new(Constants::ACTION_PREVIEW)
+				nflNews.get_preview_for_ids(eventIdList)
+		end
+	end
+
+	def DataFactory.update_recap_for_event_id(league, eventId)
+		eventIdList = []
+		eventIdList << eventId
+		case league
+			when "EPL"
+				eplNews = EPLNews.new(Constants::ACTION_RECAP)
+				eplNews.get_recap_for_ids(eventIdList)
+			when "MLB"
+				mlbNews = MLBNews.new(Constants::ACTION_RECAP)
+				mlbNews.get_recap_for_ids(eventIdList)
+			when "NBA"
+				nbaNews = NBANews.new(Constants::ACTION_RECAP)
+				nbaNews.get_recap_for_ids(eventIdList)
+			when "NFL"
+				nflNews = NFLNews.new(Constants::ACTION_RECAP)
+				nflNews.get_recap_for_ids(eventIdList)
+		end
 	end
 
 end

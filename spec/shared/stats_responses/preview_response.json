@@ -1,0 +1,71 @@
+{
+    "status": "OK",
+    "recordCount": 1,
+    "startTimestamp": "2017-01-12T12:43:35.1532638Z",
+    "endTimestamp": "2017-01-12T12:43:36.450255Z",
+    "timeTaken": 1.2969912,
+    "apiResults": [{
+        "sportId": 8,
+        "name": "Soccer",
+        "league": {
+            "leagueId": 39,
+            "name": "English Premier League",
+            "abbreviation": "EPL",
+            "displayName": "EPL",
+            "story": {
+                "storyId": "20161229195946554134404",
+                "originalStoryId": "",
+                "publishDate": {
+                    "year": 2016,
+                    "month": 12,
+                    "date": 29,
+                    "hour": 20,
+                    "minute": 0,
+                    "second": 15,
+                    "full": "2016-12-29T20:00:15",
+                    "dateType": "Eastern"
+                },
+                "version": 0,
+                "storyType": {
+                    "storyTypeId": 124,
+                    "name": "preview"
+                },
+                "storySource": "STATS",
+                "code": "EPL",
+                "slug": "AP-SOC--EPL-Middlesbrough-Manchester United Preview",
+                "languageType": {
+                    "id": 1,
+                    "name": "EN"
+                },
+                "eventId": 1643241,
+                "teams": [{
+                    "teamId": 6157,
+                    "location": "Manchester United",
+                    "nickname": "",
+                    "abbreviation": "MUN",
+                    "teamLocationType": {
+                        "teamLocationTypeId": 1,
+                        "name": "home"
+                    }
+                }, {
+                    "teamId": 6146,
+                    "location": "Middlesbrough",
+                    "nickname": "",
+                    "abbreviation": "MID",
+                    "teamLocationType": {
+                        "teamLocationTypeId": 2,
+                        "name": "away"
+                    }
+                }],
+                "header": {
+                    "headline": "Middlesbrough-Manchester United Preview",
+                    "byline": "",
+                    "bytitle": ""
+                },
+                "content": {
+                    "paragraphs": ["Regardless of club or status, the fortunes of players rise and fall in the Premier League, sometimes with startling speed as a season unfolds.", "Such is the case at Manchester United, who are watching summer signing Henrikh Mkhitaryan develop before their eyes as one-time teenage starlet Anthony Martial simply watches from the bench heading into Friday's match against Middlesbrough at Old Trafford.", "Far and away the best player at the international level for Armenia and a key contributor to Borussia Dortmund's rise in the Bundesliga before making the jump to the English top flight for a reported £26.3 million transfer fee, Mkhitaryan struggled in his transition to the rough-and-tumble world of Premier League midfields.", "New manager Jose Mourinho could not find a regular spot for him in league play, instead using him mainly for Thursday night Europa League duties and EFL Cup ties. But something clicked earlier this month, when United (9-6-3) secured progression to the knockout rounds of the Europa in a 2-0 victory at Zorya Luhansk.", "Mkhitaryan opened his account with Manchester United with a well-taken goal and hasn't looked back. He has found a comfort zone working in tandem with midfielders Paul Pogba and veteran Michael Carrick, and a connection with Zlatan Ibrahimovic, whose shockingly stunning form at age 35 is the primary reason the Red Devils are within touch of a top-four spot.", "But it was Mkhitaryan who stole the show in United's 3-1 win over Sunderland on Boxing Day, establishing himself as the Premier League's goal of the year frontrunner with an outrageous backheel flick on a cross by Ibrahimovic that was his third goal in as many matches around missing two contests due to an ankle injury.", "\"That was the best goal I've ever scored,\" Mkhitaryan told MUTV. \"I was very excited … I was expecting the ball to be in front of me and then I realized I was in front of it. As the ball was behind me, the only thing I could do was a backheel so I did that and I succeeded.", "\"He has scored beautiful goals all his career,\" manager Jose Mourinho said. \"In this moment (there are the) goals but also the defensive work and also creativity. And I'm so happy he came back after this injury and came back with his happiness and the feeling that the people at Old Trafford love him.\"", "That love is something Martial has not felt of late. After bursting onto the scene at Old Trafford following his shocking move from Monaco last season, the 21-year-old has just one goal in 11 league matches this term. His agent has fueled rumours the French starlet could be on the move in the January transfer window with an offer from Sevilla reportedly being considered.", "Mourinho has no interest in moving Martial on loan and called upon the youngster to follow Mkhitaryan's formula to get more playing time with United.", "\"People forget that Anthony is very, very young and last season Manchester United played completely different than we do today,\" Mourinho told French channel SFR Sport. \"This season is more difficult. I think he needs a little bit of time to improve.", "\"Mkhitaryan was completely open and understood the difference between me and the other coaches he had. He worked a lot without playing, but he worked a lot to try and reach the level. We have so many good players in similar positions - Martial, (Juan) Mata, Mkhitaryan, (Wayne) Rooney. I cannot give him four, five, six, seven matches in a row when I have other people on the sidelines waiting for a chance.\"", "All the while, Ibrahimovic continues to score goals at a pace belying his 35 years. His 12 in league play trail only Chelsea's Diego Costa, and he has 11 goals in his last 10 matches across all competitions.", "Manchester United have won four on the bounce in league play, are unbeaten in their last nine (5-4-0) in the top flight and carry a 10-match unbeaten streak (7-3-0) in all contests into this match.", "This will also be a reunion of sorts for Mourinho as former Real Madrid assistant Aitor Karanka brings his new boys Middlesbrough (4-6-8) for their first Premier League match at the Theatre of Dreams since the 2008-09 season.", "Boro enter 15th place in the table, four points above the drop, but have lost three of four after an ill-tempered 1-0 defeat at Burnley on Boxing Day. The two promoted sides combined for 11 yellow cards, including five by Middlesbrough, and Andre Gray's goal in the 80th minute for the Clarets proved to be the difference.", "\"This kind of game (against Burnley) doesn't come around very often and we have missed an opportunity to add points on the table,\" Karanka said. \"We have to learn from this game once again. It's frustrating because I think we were better than them.\"", "Boro are tied with Sunderland for 18th with 16 goals scored, ahead of only bottom-dwellers Hull City and have scored just five in going 0-3-5 in their last eight matches outside Riverside Stadium.", "Middlesbrough have been connected with a move to land Aston Villa striker Rudy Gestedes in the January window to bolster their punchless offence. But the lack of goals will be a secondary concern given the Teessiders will have to contend with Ibrahimovic without defender Antonio Barragan, who picked up his fifth yellow card and will serve a one-match ban.", "United, meanwhile, will likely be without Wayne Rooney, who also missed Tuesday's match due to a thigh injury suffered in training.", "Middlesbrough dumped United out of the League Cup last year on penalties in the fourth round. The teams played 120 scoreless minutes at Old Trafford before the Boro converted three of four kicks from the spot to outlast the Red Devils.", "Manchester United hold a 16-8-4 lead in top-flight league matches and are unbeaten in their last seven (4-3-0) at Old Trafford since a 1-0 defeat on March 23, 2002."]
+                }
+            }
+        }
+    }]
+}
