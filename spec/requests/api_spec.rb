@@ -146,22 +146,14 @@ describe 'API Spec' do
         expect( parsed_response[ :content ][ :paragraphs ]).not_to be_empty
         expect( parsed_response[ :content ][ :paragraphs ][0]).not_to be_nil
       end
-=begin
+
     # recap for MLB
       specify 'when no recap available for the event yet' do
         get '/sports_news', {sport: "MLB", event_id: "1643340", event_status_id: "4"}
         expect( last_response.status ).to eq 404
         expect( parsed_response[ :eventId ]).to be_nil
       end
-      specify 'when recap available for the event' do
-        get '/sports_news', {sport: "MLB", event_id: "1677891", event_status_id: "4"}
-        expect( last_response.status).to eq 200
-        expect( parsed_response[ :eventId ]).to eq "1677891"
-        expect( parsed_response[ :headline ]).not_to be_nil
-        expect( parsed_response[ :content ][ :paragraphs ]).not_to be_empty
-        expect( parsed_response[ :content ][ :paragraphs ][0]).not_to be_nil
-      end
-=end
+      
     # recap for NFL
       specify 'when no recap available for the event yet' do
         get '/sports_news', {sport: "NFL", event_id: "1643340", event_status_id: "4"}
