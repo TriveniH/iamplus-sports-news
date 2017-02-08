@@ -1,8 +1,9 @@
 class SportsDirectDatafetcher
 
-	def initialize action
+	def initialize (action, sportId)
 		puts "SportsDirectDatafetcher initializing"
 		@action = action
+		@sportId = sportId
 	end
 
 	def get_preview_for_user_query(competition_id)

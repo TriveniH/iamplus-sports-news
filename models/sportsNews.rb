@@ -25,7 +25,7 @@ class SportsNews
 
 	 def resolve_endpoints_gracenote
 	 	resolve_action
- 		@gameType = SportsDirectDatafetcher.new(@action)
+ 		@gameType = SportsDirectDatafetcher.new(@action, @sportId)
 	 end
 
 	 def resolve_data_vendor

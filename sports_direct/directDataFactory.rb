@@ -33,7 +33,24 @@ module DirectDataFactory
 		url = get_route_for_sport_atom("NBA", ROUTE_PREVIEW) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "NBA", "preview")
+		
+		url = get_route_for_sport_atom("NFL", ROUTE_PREVIEW) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url = "+url
+		make_request(url, "NFL", "preview")
 
+		url = get_route_for_sport_atom("NHL", ROUTE_PREVIEW) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url = "+url
+		make_request(url, "NHL", "preview")
+=begin
+		url = get_route_for_sport_atom("MLB", ROUTE_PREVIEW) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url = "+url
+		make_request(url, "MLB", "preview")
+		
+		url = get_route_for_sport_atom("EPL", ROUTE_PREVIEW) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url = "+url
+		make_request(url, "EPL", "preview")
+
+=end		
 	end
 
 	def DirectDataFactory.fetch_recap
@@ -42,6 +59,23 @@ module DirectDataFactory
 		url = get_route_for_sport_atom("NBA", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "NBA", "recap")
+		
+		url = get_route_for_sport_atom("NBA", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url = "+url
+		make_request(url, "NFL", "recap")
+
+		url = get_route_for_sport_atom("NHL", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url = "+url
+		make_request(url, "NHL", "recap")
+=begin
+		url = get_route_for_sport_atom("NBA", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url = "+url
+		make_request(url, "MLB", "recap")
+		
+		url = get_route_for_sport_atom("NBA", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url = "+url
+		make_request(url, "EPL", "recap")
+=end
 	end
 
 	def DirectDataFactory.get_route_for_sport_atom(sport, route)
@@ -54,6 +88,8 @@ module DirectDataFactory
 			ATOM_SPORT_NFL + route
 		when "EPL"
 			ATOM_SPORT_EPL + route
+		when "NHL"
+			ATOM_SPORT_NHL + route
 		end
 	end
 
@@ -67,6 +103,9 @@ module DirectDataFactory
 			SPORT_DATA_NFL + route
 		when "EPL"
 			SPORT_DATA_EPL + route
+		when "NHL"
+			SPORT_DATA_NHL + route
+				
 		end
 	end
 
@@ -131,10 +170,10 @@ module DirectDataFactory
 			case action
 			when "preview" then
 				DirectDBHelperPreview._save_preview(competition_id, article_id, 
-					competition_date, author, source, publication_date, title, synopsis, body,"NBA", nil, nil)
+					competition_date, author, source, publication_date, title, synopsis, body, league, nil, nil)
 			when "recap" then
 				DirectDBHelperRecap._save_recap(competition_id, article_id, 
-					competition_date, author, source, publication_date, title, synopsis, body,"NBA", nil, nil)
+					competition_date, author, source, publication_date, title, synopsis, body, league, nil, nil)
 			end
 		end
 	end
