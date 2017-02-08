@@ -39,7 +39,7 @@ $stdout.sync = true
 set :raise_errors, true
 set :show_exceptions, false
 
-Mongoid.load!( 'config/mongoid.yml', :test)
+Mongoid.load!( 'config/mongoid.yml', ENV[ 'RACK_ENV' ])
 Mongo::Logger.logger.level = Logger::ERROR
 
 scheduler = Rufus::Scheduler.new
