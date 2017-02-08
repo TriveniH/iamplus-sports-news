@@ -4,10 +4,11 @@ class SportsNews
     @sportId = params[:sport].to_s
     @status = params[:event_status_id].to_s
     @teamId = params[:team_id].to_s
-    resolve_endpoints
+    @vendor = params[:vendor].to_s
+	resolve_data_vendor
   	end
 
-	 def resolve_endpoints
+	 def resolve_endpoints_stats
 	 	resolve_action
 	 	@gameType = nil
 	 	case @sportId
@@ -20,6 +21,20 @@ class SportsNews
 	 	when "EPL" then 
 	 		@gameType = EPLNews.new(@action)
 	 	end
+	 end
+
+	 def resolve_endpoints_gracenote
+	 	resolve_action
+ 		@gameType = SportsDirectDatafetcher.new(@action)
+	 end
+
+	 def resolve_data_vendor
+	 	puts "vendor::"+ @vendor.to_s
+	 	if @vendor != nil && @vendor.length >0 && @vendor == "gracenote"
+			resolve_endpoints_gracenote
+			return
+	 	end
+	 	resolve_endpoints_stats
 	 end
 
 	 def get_data

@@ -45,13 +45,13 @@ end
 
 def set_status response
   parsedResponse = JSON.parse(response)
-  statStatus = parsedResponse['stat_status']
+  statStatus = parsedResponse['error_status']
   if statStatus == nil
     return nil
   end
 
-  errorCode = statStatus['stat_error_code']
-  error_status = statStatus['stat_message']
+  errorCode = statStatus['error_code']
+  error_status = statStatus['message']
 
   if errorCode != nil
     status errorCode
