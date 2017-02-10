@@ -21,4 +21,11 @@ class SportsDirectDatafetcher
 		end
 		return Utils.generate_error_response 404
 	end
+
+	def get_headlines_for_sport
+		if DirectDBHelperHeadlines._check_if_league_exists(@sportId)
+			return DirectDBHelperHeadlines._retrieve_headlines(@sportId)
+		end
+		return Utils.generate_error_response 404
+	end
 end

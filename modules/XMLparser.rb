@@ -51,8 +51,10 @@ module XMLparser
 			content = process_html_article_content article.xpath('body').text
 
 			competition = article.xpath('//competition')
-			competitionId = competition.xpath('id').text.to_s
-			competitionId = competitionId.split(':')[1]
+			if competition != nil
+				competitionId = competition.xpath('id').text.to_s
+				competitionId = competitionId.split(':')[1]
+			end
 
 			startDate = competition.xpath('start-date').text.to_s
 			puts "articleId = "+articleId
@@ -61,7 +63,7 @@ module XMLparser
 			puts "author = "+author
 			puts "synopsis:"+ synopsis
 			puts "date = "+date
-			puts "competitionId = "+competitionId
+			#puts "competitionId = "+competitionId
 			puts "startDate = "+startDate
 			puts "content = "+ content
 
@@ -72,7 +74,7 @@ module XMLparser
 				source: source,
 				author: author,
 				competition_date: startDate,
-				published_date: date,
+				publication_date: date,
 				synopsis: synopsis,
 				body: content,
 			}

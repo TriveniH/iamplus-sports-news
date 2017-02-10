@@ -18,13 +18,19 @@ module DirectDataFactory
 	ROUTE_PREVIEW_SPORTS_DATA = "news/previews/"
 	ROUTE_RECAP = "competition-recaps/&apiKey="
 	ROUTE_RECAP_SPORTS_DATA = "news/recaps/"
+	ROUTE_HEADLINE = "breaking-news/&apiKey="
+	ROUTE_HEADLINE_SPORTS_DATA = "news/breaking/"
 	API_KEY = ENV['SPORTS_DIRECT_API_KEY']
 	NEWER_THAN_PARAM_KEY = "&newerThan="
 
 	def DirectDataFactory.fetch_all_data
+		
 		fetch_preview
 		sleep 5
 		fetch_recap
+		sleep 5 
+
+		fetch_headline
 	end
 
 	def DirectDataFactory.fetch_preview
@@ -76,6 +82,16 @@ module DirectDataFactory
 		puts "sports_direct url = "+url
 		make_request(url, "EPL", "recap")
 =end
+	end
+
+	def DirectDataFactory.fetch_headline
+		DirectDBHelperHeadlines.clearAllHeadlines
+		time = Time.now - 2.days
+		puts time.strftime("%Y-%m-%dT%H:%M:%S")
+		url = get_route_for_sport_atom("NBA", ROUTE_HEADLINE) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url for breaking-news = "+url
+		make_request(url, "NBA", "headlines")
+
 	end
 
 	def DirectDataFactory.get_route_for_sport_atom(sport, route)
@@ -130,6 +146,8 @@ module DirectDataFactory
 			route = ROUTE_PREVIEW_SPORTS_DATA
 		when "recap" then
 			route = ROUTE_RECAP_SPORTS_DATA
+		when "headlines" then
+			route = ROUTE_HEADLINE_SPORTS_DATA
 		end
 		url = get_route_for_sport_data(sport, route)
 		titels_response = titles.map do |title|
@@ -167,6 +185,8 @@ module DirectDataFactory
 			synopsis = preview['synopsis']
 			body = preview['body']
 
+			puts "publication_date = "+publication_date.to_s
+
 			case action
 			when "preview" then
 				DirectDBHelperPreview._save_preview(competition_id, article_id, 
@@ -174,6 +194,9 @@ module DirectDataFactory
 			when "recap" then
 				DirectDBHelperRecap._save_recap(competition_id, article_id, 
 					competition_date, author, source, publication_date, title, synopsis, body, league, nil, nil)
+			when "headlines" then
+				DirectDBHelperHeadlines._save_headlines(article_id, publication_date, author, source, title,
+					synopsis, body, league)
 			end
 		end
 	end
