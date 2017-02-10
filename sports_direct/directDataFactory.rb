@@ -46,11 +46,11 @@ module DirectDataFactory
 		url = get_route_for_sport_atom("NHL", ROUTE_PREVIEW) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "NHL", "preview")
-=begin
+
 		url = get_route_for_sport_atom("MLB", ROUTE_PREVIEW) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "MLB", "preview")
-		
+=begin		
 		url = get_route_for_sport_atom("EPL", ROUTE_PREVIEW) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "EPL", "preview")
@@ -65,19 +65,19 @@ module DirectDataFactory
 		puts "sports_direct url = "+url
 		make_request(url, "NBA", "recap")
 		
-		url = get_route_for_sport_atom("NBA", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		url = get_route_for_sport_atom("NFL", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "NFL", "recap")
 
 		url = get_route_for_sport_atom("NHL", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "NHL", "recap")
-=begin
-		url = get_route_for_sport_atom("NBA", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+
+		url = get_route_for_sport_atom("MLB", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "MLB", "recap")
-		
-		url = get_route_for_sport_atom("NBA", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+=begin		
+		url = get_route_for_sport_atom("EPL", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "EPL", "recap")
 =end
