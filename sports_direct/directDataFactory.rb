@@ -24,17 +24,19 @@ module DirectDataFactory
 	NEWER_THAN_PARAM_KEY = "&newerThan="
 
 	def DirectDataFactory.fetch_all_data
-
+=begin
 		fetch_preview
 		sleep 5
 		fetch_recap
 		sleep 5 
+=end
 		fetch_headline
 	end
 
 	def DirectDataFactory.fetch_preview
 		time = Time.now - 1.month
 		puts time.strftime("%Y-%m-%dT%H:%M:%S")
+
 		url = get_route_for_sport_atom("NBA", ROUTE_PREVIEW) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "NBA", "preview")
@@ -61,6 +63,7 @@ module DirectDataFactory
 	def DirectDataFactory.fetch_recap
 		time = Time.now - 1.month
 		puts time.strftime("%Y-%m-%dT%H:%M:%S")
+
 		url = get_route_for_sport_atom("NBA", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "NBA", "recap")
@@ -87,10 +90,27 @@ module DirectDataFactory
 		DirectDBHelperHeadlines.clearAllHeadlines
 		time = Time.now - 2.days
 		puts time.strftime("%Y-%m-%dT%H:%M:%S")
+
 		url = get_route_for_sport_atom("NBA", ROUTE_HEADLINE) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url for breaking-news = "+url
 		make_request(url, "NBA", "headlines")
 
+		url = get_route_for_sport_atom("NFL", ROUTE_HEADLINE) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url for breaking-news = "+url
+		make_request(url, "NFL", "headlines")
+
+		url = get_route_for_sport_atom("NHL", ROUTE_HEADLINE) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url for breaking-news = "+url
+		make_request(url, "NHL", "headlines")
+
+		url = get_route_for_sport_atom("MLB", ROUTE_HEADLINE) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url for breaking-news = "+url
+		make_request(url, "MLB", "headlines")
+=begin
+		url = get_route_for_sport_atom("EPL", ROUTE_HEADLINE) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
+		puts "sports_direct url for breaking-news = "+url
+		make_request(url, "EPL", "headlines")
+=end
 	end
 
 	def DirectDataFactory.get_route_for_sport_atom(sport, route)
