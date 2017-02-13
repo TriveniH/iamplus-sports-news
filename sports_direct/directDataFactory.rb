@@ -24,12 +24,11 @@ module DirectDataFactory
 	NEWER_THAN_PARAM_KEY = "&newerThan="
 
 	def DirectDataFactory.fetch_all_data
-=begin
+
 		fetch_preview
 		sleep 5
 		fetch_recap
 		sleep 5 
-=end
 		fetch_headline
 	end
 
@@ -63,7 +62,7 @@ module DirectDataFactory
 	def DirectDataFactory.fetch_recap
 		time = Time.now - 1.month
 		puts time.strftime("%Y-%m-%dT%H:%M:%S")
-
+		
 		url = get_route_for_sport_atom("NBA", ROUTE_RECAP) + API_KEY + NEWER_THAN_PARAM_KEY + time.strftime("%Y-%m-%dT%H:%M:%S")
 		puts "sports_direct url = "+url
 		make_request(url, "NBA", "recap")
