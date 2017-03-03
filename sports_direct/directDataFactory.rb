@@ -24,12 +24,11 @@ module DirectDataFactory
 	NEWER_THAN_PARAM_KEY = "&newerThan="
 
 	def DirectDataFactory.fetch_all_data
-=begin
+
 		fetch_preview
 		sleep 5
 		fetch_recap
-		sleep 5 
-=end		
+		sleep 5 		
 		fetch_headline
 	end
 
