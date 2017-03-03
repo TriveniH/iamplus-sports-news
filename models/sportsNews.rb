@@ -25,7 +25,7 @@ class SportsNews
 
 	 def resolve_endpoints_gracenote
 	 	resolve_action
- 		@gameType = SportsDirectDatafetcher.new(@action, @sportId)
+ 		@gameType = SportsDirectDatafetcher.new(@action, @sportId, @teamId)
 	 end
 
 	 def resolve_data_vendor
@@ -47,7 +47,7 @@ class SportsNews
 	 	when Constants::ACTION_HEADLINES then
 	 		@gameType.get_headlines_for_sport
 	 	when Constants::ACTION_RECENT_STORIES_BY_TEAM then
-	 		@gameType.get_recent_stories_for_team @teamId
+	 		@gameType.get_recent_stories_for_team (@teamId)
 	 	end
 	 end
 

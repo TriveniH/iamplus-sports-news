@@ -56,6 +56,13 @@ module XMLparser
 				competitionId = competitionId.split(':')[1]
 			end
 
+			team = article.xpath('//team')
+			if team != nil
+				teamId = team.xpath('id').text.to_s
+				teamId = teamId.split(':')[1]
+				teamName = team.xpath('name').text.to_s
+			end
+
 			startDate = competition.xpath('start-date').text.to_s
 			puts "articleId = "+articleId
 			puts "title = "+title
@@ -77,6 +84,8 @@ module XMLparser
 				publication_date: date,
 				synopsis: synopsis,
 				body: content,
+				team_id: teamId,
+				team_name: teamName
 			}
 		end
 		puts "preview_list::"+ preview_list.to_s

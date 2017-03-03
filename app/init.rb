@@ -46,11 +46,11 @@ Mongo::Logger.logger.level = Logger::ERROR
 
 scheduler = Rufus::Scheduler.new
 
-scheduler.every '1d' do
-#scheduler.in '1s' do
-	DataFactory.fetch_update_schedule
-	DataFactory.update_previews_recaps
-    DirectDataFactory.fetch_all_data
+#scheduler.every '1d' do
+scheduler.in '1s' do
+	#DataFactory.fetch_update_schedule
+	#DataFactory.update_previews_recaps
+ DirectDataFactory.fetch_all_data
 end
 
 zipkin_config = { service_name:ENV[ 'NEW_RELIC_APP_NAME' ],

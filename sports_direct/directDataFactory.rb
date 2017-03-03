@@ -24,11 +24,12 @@ module DirectDataFactory
 	NEWER_THAN_PARAM_KEY = "&newerThan="
 
 	def DirectDataFactory.fetch_all_data
-
+=begin
 		fetch_preview
 		sleep 5
 		fetch_recap
 		sleep 5 
+=end		
 		fetch_headline
 	end
 
@@ -202,8 +203,12 @@ module DirectDataFactory
 			title = preview['title']
 			synopsis = preview['synopsis']
 			body = preview['body']
+			team_id = preview[ 'team_id']
+			team_name = preview['team_name']
 
 			puts "publication_date = "+publication_date.to_s
+			puts "teamId = "+team_id.to_s
+			puts "team_name = "+team_name.to_s
 
 			case action
 			when "preview" then
@@ -214,7 +219,7 @@ module DirectDataFactory
 					competition_date, author, source, publication_date, title, synopsis, body, league, nil, nil)
 			when "headlines" then
 				DirectDBHelperHeadlines._save_headlines(article_id, publication_date, author, source, title,
-					synopsis, body, league)
+					synopsis, body, league, team_id, team_name)
 			end
 		end
 	end

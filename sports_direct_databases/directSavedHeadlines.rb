@@ -10,6 +10,8 @@ class DirectSavedHeadLines
   field :synopsis, type:String
   field :body, type:String
   field :league_name, type:String
+  field :team_id, type:String
+  field :team_name, type:String
 
   index({ created_at: 1 }, {expire_after_seconds: 86400})
 end
