@@ -25,10 +25,10 @@ module DirectDataFactory
 
 	def DirectDataFactory.fetch_all_data
 
-		fetch_preview
-		sleep 5
-		fetch_recap
-		sleep 5 		
+		#fetch_preview
+		#sleep 5
+		#fetch_recap
+		#sleep 5 		
 		fetch_headline
 	end
 
