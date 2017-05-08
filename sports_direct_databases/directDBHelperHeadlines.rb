@@ -31,8 +31,11 @@ module DirectDBHelperHeadlines
 
 				headlines_response = create_json_from_db_for_headlines_list savedHeadLines
 				puts "headlines_response === "+headlines_response.to_s
+				if headlinesList.length > 6
+					break
+				end
 				headlinesList << headlines_response
-				
+
 			end
 
 			saved_game_json = {
@@ -65,6 +68,9 @@ module DirectDBHelperHeadlines
 
 				headlines_response = create_json_from_db_for_headlines_list savedHeadLines
 				puts "team_news_response === "+headlines_response.to_s
+				if headlinesList.length > 6
+					break
+				end
 				headlinesList << headlines_response
 				
 			end
