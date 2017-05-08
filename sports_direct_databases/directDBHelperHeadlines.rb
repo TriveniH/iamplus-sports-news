@@ -40,9 +40,6 @@ module DirectDBHelperHeadlines
 
 			saved_game_json = {
 			status: "OK",
-			date: date,
-			source: source,
-			author: author,
 			content: headlinesList
 			}
 			return saved_game_json
@@ -62,7 +59,6 @@ module DirectDBHelperHeadlines
 			headlinesList = []
 			DirectSavedHeadLines.where(team_id: teamId).each do | savedHeadLines|
 
-				date = savedHeadLines[:publication_date]
 				team_name = savedHeadLines[:team_name]
 				puts "team name = "+team_name.to_s
 
@@ -77,9 +73,6 @@ module DirectDBHelperHeadlines
 
 			saved_game_json = {
 			status: "OK",
-			date: date,
-			source: source,
-			author: author,
 			team_name: team_name,
 			content: headlinesList
 			}
@@ -102,7 +95,13 @@ module DirectDBHelperHeadlines
 		headlines = savedHeadLines[:title]
 		synopsis =  savedHeadLines[:synopsis]
 		body = savedHeadLines[:body]
+		date = savedHeadLines[:publication_date]
+		author = savedHeadLines[:author]
+		source = savedHeadLines[:source]
 		 {
+		 	source: source,
+		 	author: author,
+		 	publicationDate: date,
 		 	headlineText:headlines,
 			synopsis:synopsis,
 			body:body
