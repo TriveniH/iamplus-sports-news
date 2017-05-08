@@ -1,0 +1,20 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Feed Index</title>
+    <link href="http://xml.sportsdirectinc.com/Atom?feed=/basketball/nba/competition-previews/&apiKey=3B6B6438-5A28-4147-A25B-F4EEC04120CE&newerThan=2017-01-25T12:04:02.8112-04:00" />
+    <updated>2017-01-31T04:56:34.7648-04:00</updated>
+    <id>http://xml.sportsdirectinc.com/Atom?feed=/basketball/nba/competition-previews/&apiKey=3B6B6438-5A28-4147-A25B-F4EEC04120CE&newerThan=2017-01-25T12:04:02.8112-04:00</id>
+    <entry>
+        <title>485741.xml</title>
+        <link href="http://xml.sportsdirectinc.com/sport/v2/basketball/NBA/news/previews/485741.xml?apiKey=3B6B6438-5A28-4147-A25B-F4EEC04120CE" />
+        <id>http://xml.sportsdirectinc.com/sport/v2/basketball/NBA/news/previews/485741.xml?apiKey=3B6B6438-5A28-4147-A25B-F4EEC04120CE</id>
+        <updated>2017-01-25T21:31:56.6797-04:00</updated>
+        <summary>feed updated 2017-01-25T21:31:56.6797-04:00</summary>
+    </entry>
+    <entry>
+        <title>485740.xml</title>
+        <link href="http://xml.sportsdirectinc.com/sport/v2/basketball/NBA/news/previews/485740.xml?apiKey=3B6B6438-5A28-4147-A25B-F4EEC04120CE" />
+        <id>http://xml.sportsdirectinc.com/sport/v2/basketball/NBA/news/previews/485740.xml?apiKey=3B6B6438-5A28-4147-A25B-F4EEC04120CE</id>
+        <updated>2017-01-25T21:27:45.1087-04:00</updated>
+        <summary>feed updated 2017-01-25T21:27:45.1087-04:00</summary>
+    </entry>
+</feed>

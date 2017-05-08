@@ -12,6 +12,7 @@ gem 'redis'
 gem 'mongoid'
 gem 'rufus-scheduler'
 gem 'zipkin-tracer', '~> 0.20.1'
+gem 'nokogiri'
 
 
 group :test do

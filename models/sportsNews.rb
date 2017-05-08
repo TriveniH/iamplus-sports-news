@@ -4,10 +4,11 @@ class SportsNews
     @sportId = params[:sport].to_s
     @status = params[:event_status_id].to_s
     @teamId = params[:team_id].to_s
-    resolve_endpoints
+    @vendor = params[:vendor].to_s
+	resolve_data_vendor
   	end
 
-	 def resolve_endpoints
+	 def resolve_endpoints_stats
 	 	resolve_action
 	 	@gameType = nil
 	 	case @sportId
@@ -22,6 +23,20 @@ class SportsNews
 	 	end
 	 end
 
+	 def resolve_endpoints_gracenote
+	 	resolve_action
+ 		@gameType = SportsDirectDatafetcher.new(@action, @sportId, @teamId)
+	 end
+
+	 def resolve_data_vendor
+	 	puts "vendor::"+ @vendor.to_s
+	 	if @vendor != nil && @vendor.length >0 && @vendor == "gracenote"
+			resolve_endpoints_gracenote
+			return
+	 	end
+	 	resolve_endpoints_stats
+	 end
+
 	 def get_data
 	 	puts "action: "+ @action.to_s
 	 	case @action
@@ -32,7 +47,7 @@ class SportsNews
 	 	when Constants::ACTION_HEADLINES then
 	 		@gameType.get_headlines_for_sport
 	 	when Constants::ACTION_RECENT_STORIES_BY_TEAM then
-	 		@gameType.get_recent_stories_for_team @teamId
+	 		@gameType.get_recent_stories_for_team (@teamId)
 	 	end
 	 end
 
