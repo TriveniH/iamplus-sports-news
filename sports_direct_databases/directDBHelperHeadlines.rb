@@ -111,11 +111,9 @@ module DirectDBHelperHeadlines
 
 	def DirectDBHelperHeadlines.clearAllHeadlines
 		DirectSavedHeadLines.where(league_name: "NBA").delete
-=begin
 		DirectSavedHeadLines.where(league_name: "EPL").delete
 		DirectSavedHeadLines.where(league_name: "NFL").delete
 		DirectSavedHeadLines.where(league_name: "MLB").delete
 		DirectSavedHeadLines.where(league_name: "NHL").delete
-=end	
 	end
 end
